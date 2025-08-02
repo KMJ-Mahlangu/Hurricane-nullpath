@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+
 public class FPController : MonoBehaviour
 {
     [Header("Movement Settings")]
@@ -14,25 +15,31 @@ public class FPController : MonoBehaviour
     private Vector2 lookInput;
     private Vector3 velocity;
     private float verticalRotation = 0f;
+
+
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
+
     private void Update()
     {
         HandleMovement();
         HandleLook();
     }
+
     public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
     }
+
     public void OnLook(InputAction.CallbackContext context)
     {
         lookInput = context.ReadValue<Vector2>();
     }
+
     public void HandleMovement()
     {
         Vector3 move = transform.right * moveInput.x + transform.forward *
@@ -43,6 +50,7 @@ public class FPController : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
+
     public void HandleLook()
     {
         float mouseX = lookInput.x * lookSensitivity;
