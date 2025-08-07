@@ -1648,7 +1648,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets:
+  - {fileID: 1258935740}
   - {fileID: 169647910}
+  - {fileID: 210274226}
+  - {fileID: 1453343638}
   offset: {x: 0, y: 5, z: 0}
 --- !u!95 &868773927
 Animator:
