@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 169647913}
   - component: {fileID: 169647912}
   - component: {fileID: 169647911}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -548,7 +548,7 @@ GameObject:
   - component: {fileID: 210274229}
   - component: {fileID: 210274228}
   - component: {fileID: 210274227}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -815,7 +815,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 287969219}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 4Cubes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2659,7 +2659,7 @@ GameObject:
   - component: {fileID: 1258935743}
   - component: {fileID: 1258935742}
   - component: {fileID: 1258935741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3320,7 +3320,7 @@ GameObject:
   - component: {fileID: 1453343641}
   - component: {fileID: 1453343640}
   - component: {fileID: 1453343639}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3787,6 +3787,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayArrow
       objectReference: {fileID: 0}
+    - target: {fileID: 1453037145282543300, guid: e9f438a41d44d1042b4497a72b00ab2c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453037145282543300, guid: e9f438a41d44d1042b4497a72b00ab2c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2261344920293024894, guid: e9f438a41d44d1042b4497a72b00ab2c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.28583
@@ -3801,7 +3809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2261344920293024894, guid: e9f438a41d44d1042b4497a72b00ab2c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 40
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 2261344920293024894, guid: e9f438a41d44d1042b4497a72b00ab2c, type: 3}
       propertyPath: m_LocalPosition.y
