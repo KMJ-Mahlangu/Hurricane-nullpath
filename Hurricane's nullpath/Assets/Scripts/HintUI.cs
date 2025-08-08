@@ -42,7 +42,7 @@ public class HintUI : MonoBehaviour
         }
         else
         {
-            feedbackText.text = "Wrong answer , try";
+            feedbackText.text = "Wrong answer , try Again";
         }
     }
 }

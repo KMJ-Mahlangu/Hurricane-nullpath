@@ -4,6 +4,7 @@ public class TriggerCube : MonoBehaviour
 {
     public string hintMessage;
     public string correctAnswer;
+    public GameObject arrow;
 
     private bool triggered = false;
 
@@ -23,6 +24,10 @@ public class TriggerCube : MonoBehaviour
     {
         
         Debug.Log("Correct answer! Proceed");
+        if(arrow != null)
+        {
+            arrow.SetActive(false);
+        }
         gameObject.SetActive(false); 
     }
 }
