@@ -5,6 +5,7 @@ public class TriggerCube : MonoBehaviour
     public string hintMessage;
     public string correctAnswer;
     public GameObject arrow;
+   // public MinimapArrowUI minimapArrow;
 
     public GameObject mapPiecePrefab;
     public float spawnRadius = 5f;
@@ -36,5 +37,6 @@ public class TriggerCube : MonoBehaviour
         Vector3 spawnPos = transform.position + Random.insideUnitSphere * spawnRadius;
         spawnPos.y = transform.position.y;
         Instantiate(mapPiecePrefab, spawnPos, Quaternion.identity);
+       // minimapArrow.SetTarget(mapPiecePrefab.transform);
     }
 }

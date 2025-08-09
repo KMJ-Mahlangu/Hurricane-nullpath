@@ -22,6 +22,7 @@ public class PickUpObject : MonoBehaviour
         if(isMapPiece)
         {
             MapManager.Instance.CollectPiece();
+           
             Destroy(gameObject);
            
         }
