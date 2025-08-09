@@ -67,7 +67,11 @@ public class FPController : MonoBehaviour
                 if (pickUp != null)
                 {
                     pickUp.PickUp(holdpoint);
-                    heldObject = pickUp;
+
+                    if (!pickUp.isMapPiece)
+                    {
+                        heldObject = pickUp;
+                    }
                 }
             }
         }
