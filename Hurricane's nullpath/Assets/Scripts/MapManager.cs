@@ -19,6 +19,14 @@ public class MapManager : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        if(fullMapButton != null)
+        {
+            fullMapButton.SetActive(false);
+        }
+    }
+
     public void CollectPiece()
     {
         collectedPieces++;
