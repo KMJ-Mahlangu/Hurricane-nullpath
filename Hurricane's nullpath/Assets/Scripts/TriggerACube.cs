@@ -6,6 +6,9 @@ public class TriggerCube : MonoBehaviour
     public string correctAnswer;
     public GameObject arrow;
 
+    public GameObject mapPiecePrefab;
+    public float spawnRadius = 5f;
+
     private bool triggered = false;
 
     void OnTriggerEnter(Collider other)
@@ -28,6 +31,10 @@ public class TriggerCube : MonoBehaviour
         {
             arrow.SetActive(false);
         }
-        gameObject.SetActive(false); 
+        gameObject.SetActive(false);
+
+        Vector3 spawnPos = transform.position + Random.insideUnitSphere * spawnRadius;
+        spawnPos.y = transform.position.y;
+        Instantiate(mapPiecePrefab, spawnPos, Quaternion.identity);
     }
 }

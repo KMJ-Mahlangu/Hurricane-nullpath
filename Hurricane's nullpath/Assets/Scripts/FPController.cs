@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class FPController : MonoBehaviour
 {
@@ -19,6 +20,11 @@ public class FPController : MonoBehaviour
     private Vector3 velocity;
     private float verticalRotation = 0f;
 
+    [Header("PickUp Settings")]
+    public float pickUpRange = 3f;
+    public Transform holdpoint;
+    private PickUpObject heldObject;
+
 
     private void Awake()
     {
@@ -31,6 +37,11 @@ public class FPController : MonoBehaviour
     {
         HandleMovement();
         HandleLook();
+
+        if (heldObject != null)
+        {
+            heldObject.MoveToHoldPoint(holdpoint.position);
+        }
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -42,6 +53,32 @@ public class FPController : MonoBehaviour
     {
         lookInput = context.ReadValue<Vector2>();
     }
+
+    public void OnPickup(InputAction.CallbackContext context)
+    {
+        if (!context.performed) return;
+
+        if(heldObject == null)
+        {
+            Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
+            if(Physics.Raycast(ray, out RaycastHit hit ,pickUpRange))
+            {
+                PickUpObject pickUp = hit.collider.GetComponent<PickUpObject>();
+                if (pickUp != null)
+                {
+                    pickUp.PickUp(holdpoint);
+                    heldObject = pickUp;
+                }
+            }
+        }
+        else
+        {
+            heldObject.Drop();
+            heldObject = null;
+        }
+    }
+
+    
 
     public void OnJump(InputAction.CallbackContext context)
     {
