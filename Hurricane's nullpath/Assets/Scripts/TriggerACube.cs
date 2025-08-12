@@ -24,7 +24,7 @@ public class TriggerCube : MonoBehaviour
 
             HintUI hintUI = FindObjectOfType<HintUI>();
             hintUI.ShowHint(hintMessage, correctAnswer, OnCorrectAnswer);
-            Time.timeScale = 0f;
+           Time.timeScale = 0f;
         }
     }
 
@@ -55,6 +55,6 @@ public class TriggerCube : MonoBehaviour
 
 
 
-        Time.timeScale = 0f;
+       Time.timeScale = 1f;
     }
 }
