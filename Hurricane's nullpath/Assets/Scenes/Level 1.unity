@@ -6185,8 +6185,6 @@ MonoBehaviour:
   arrow: {fileID: 699762036}
   mapPiecePrefab: {fileID: 1154938649}
   spawnRadius: 5
-  spawnPoints: []
-  spawnIndex: 0
 --- !u!1 &185271845
 GameObject:
   m_ObjectHideFlags: 0
@@ -7103,8 +7101,6 @@ MonoBehaviour:
   arrow: {fileID: 2074609358}
   mapPiecePrefab: {fileID: 947635355}
   spawnRadius: 5
-  spawnPoints: []
-  spawnIndex: 0
 --- !u!43 &241126055
 Mesh:
   m_ObjectHideFlags: 0
@@ -15051,7 +15047,7 @@ Transform:
   m_GameObject: {fileID: 486270607}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.718, y: -0, z: -7.113732}
+  m_LocalPosition: {x: 2.689042, y: -0, z: -7.113732}
   m_LocalScale: {x: 0.82899827, y: 1, z: 1.0897503}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17786,7 +17782,7 @@ Transform:
   m_GameObject: {fileID: 594303461}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.142, y: -0, z: -6.801277}
+  m_LocalPosition: {x: 2.113361, y: -0, z: -6.801277}
   m_LocalScale: {x: 0.31025353, y: 1, z: 0.40850458}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35046,8 +35042,6 @@ MonoBehaviour:
   arrow: {fileID: 868773918}
   mapPiecePrefab: {fileID: 1065362014}
   spawnRadius: 5
-  spawnPoints: []
-  spawnIndex: 0
 --- !u!43 &1261854570
 Mesh:
   m_ObjectHideFlags: 0
@@ -36830,8 +36824,8 @@ Transform:
   m_GameObject: {fileID: 1342474137}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.493397, y: -0, z: -6.86339}
-  m_LocalScale: {x: 0.42412397, y: 1, z: 1.8555002}
+  m_LocalPosition: {x: 1.493397, y: -0, z: -6.816167}
+  m_LocalScale: {x: 0.42412397, y: 1, z: 1.9499451}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1939863705}
@@ -40497,8 +40491,6 @@ MonoBehaviour:
   arrow: {fileID: 1696651256}
   mapPiecePrefab: {fileID: 1756649830}
   spawnRadius: 5
-  spawnPoints: []
-  spawnIndex: 0
 --- !u!1 &1469246674
 GameObject:
   m_ObjectHideFlags: 0
