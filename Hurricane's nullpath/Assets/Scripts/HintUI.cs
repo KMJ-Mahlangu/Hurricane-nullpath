@@ -21,12 +21,12 @@ public class HintUI : MonoBehaviour
         //submitButton.onClick.AddListener(CheckAnswer);
     }
 
-    public void ShowHint(string hint, string answer, System.Action onCorrect)
+    public void ShowHint(string hint/*, string answer, System.Action onCorrect*/)
     {
         panel.SetActive(true);
         hintText.text = hint;
-        correctAnswer = answer.ToLower().Trim(); 
-        onCorrectAnswer = onCorrect;
+       // correctAnswer = answer.ToLower().Trim(); 
+       // onCorrectAnswer = onCorrect;
       //  answerInput.text = "";
       //  feedbackText.text = "";
     }

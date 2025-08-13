@@ -3,7 +3,7 @@ using UnityEngine;
 public class TriggerCube : MonoBehaviour
 {
     public string hintMessage;
-    public string correctAnswer;
+    //public string answer;
     public GameObject arrow;
   
 
@@ -19,7 +19,7 @@ public class TriggerCube : MonoBehaviour
             triggered = true;
 
             HintUI hintUI = FindObjectOfType<HintUI>();
-            hintUI.ShowHint(hintMessage, correctAnswer, OnCorrectAnswer);
+            hintUI.ShowHint(hintMessage/*,answer, OnCorrectAnswer*/);
            Time.timeScale = 0f;
         }
     }
@@ -33,7 +33,6 @@ public class TriggerCube : MonoBehaviour
             arrow.SetActive(false);
         }
         gameObject.SetActive(false);
-
 
         
 
