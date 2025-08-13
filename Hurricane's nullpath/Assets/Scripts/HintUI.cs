@@ -6,10 +6,10 @@ public class HintUI : MonoBehaviour
 {
     public GameObject panel;
     public TextMeshProUGUI hintText;
-    public TMP_InputField answerInput;
-    public Button submitButton;
+   // public TMP_InputField answerInput;
+    //public Button submitButton;
 
-    public Text feedbackText;
+   // public Text feedbackText;
 
     private string correctAnswer;
     private System.Action onCorrectAnswer;
@@ -17,8 +17,8 @@ public class HintUI : MonoBehaviour
     private void Start()
     {
         panel.SetActive(false);
-        feedbackText.text = "";
-        submitButton.onClick.AddListener(CheckAnswer);
+      //  feedbackText.text = "";
+        //submitButton.onClick.AddListener(CheckAnswer);
     }
 
     public void ShowHint(string hint, string answer, System.Action onCorrect)
@@ -27,11 +27,11 @@ public class HintUI : MonoBehaviour
         hintText.text = hint;
         correctAnswer = answer.ToLower().Trim(); 
         onCorrectAnswer = onCorrect;
-        answerInput.text = "";
-        feedbackText.text = "";
+      //  answerInput.text = "";
+      //  feedbackText.text = "";
     }
 
-    void CheckAnswer()
+    /*void CheckAnswer()
     {
         string userAnswer = answerInput.text.ToLower().Trim();
         if (userAnswer == correctAnswer)
@@ -44,5 +44,5 @@ public class HintUI : MonoBehaviour
         {
             feedbackText.text = "Wrong answer , try Again";
         }
-    }
+    }*/
 }
