@@ -27010,7 +27010,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.326, y: -0.446, z: 0.57}
-  m_LocalScale: {x: 0.25, y: 0.24, z: 0.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1949821864}
@@ -60090,6 +60090,26 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 560a3717-fda1-4604-8637-cb9652487116
     m_ActionName: 'Player/PickUp[/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 04260744-64e7-45d0-ad6d-5d3072a1dcc0
+    m_ActionName: 'Player/Throw[/Keyboard/g]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1087736360}
+        m_TargetAssemblyTypeName: FPController, Assembly-CSharp
+        m_MethodName: OnSprint
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 26cbcd1b-62ea-43d2-812a-40509dd614d5
+    m_ActionName: 'Player/Sprint[/Keyboard/leftShift]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -60133,13 +60153,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 9
+  sprintSpeed: 14
   gravity: -9.81
   jumpHeight: 2
   cameraTransform: {fileID: 1949821864}
   lookSensitivity: 2
   verticalLookLimit: 51
-  pickUpRange: 5
+  pickUpRange: 4
   holdpoint: {fileID: 556727348}
+  throwForce: 10
+  throwUpwardBoost: 1
 --- !u!65 &1087736361
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61089,7 +61112,7 @@ GameObject:
   - component: {fileID: 1137237337}
   - component: {fileID: 1137237336}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74672,7 +74695,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 58287921}
+  m_Mesh: {fileID: 125255963}
 --- !u!33 &1674289659
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -88367,7 +88390,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 125255963}
+  m_Mesh: {fileID: 1968520143}
 --- !u!33 &1883923828
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -99451,7 +99474,7 @@ Transform:
   m_GameObject: {fileID: 1949792217}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.99, y: 0.47, z: -0.052999973}
+  m_LocalPosition: {x: -33.4, y: 0.47, z: 120.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -99469,7 +99492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70cea08af5d32154e8315c8f2d39831a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMapPiece: 0
+  isMapPiece: 1
 --- !u!1 &1949808298
 GameObject:
   m_ObjectHideFlags: 0
@@ -107505,6 +107528,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1333817575}
   - {fileID: 1087736356}
+  - {fileID: 1949792222}
   - {fileID: 493842755}
   - {fileID: 287969219}
   - {fileID: 86594667}
@@ -107512,7 +107536,6 @@ SceneRoots:
   - {fileID: 271679276}
   - {fileID: 1061977520}
   - {fileID: 460460880}
-  - {fileID: 1949792222}
   - {fileID: 1269536767}
   - {fileID: 1559472549}
   - {fileID: 1067022940}
