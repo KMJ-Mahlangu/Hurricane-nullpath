@@ -414,7 +414,7 @@ public partial class @GameController: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""275f76c5-01f7-4622-9e8b-d1bbee6892e6"",
-                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";New Control Scheme"",
