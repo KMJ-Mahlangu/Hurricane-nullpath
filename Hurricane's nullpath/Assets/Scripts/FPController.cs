@@ -45,7 +45,7 @@ public class FPController : MonoBehaviour
     {
         HandleMovement();
         HandleLook();
-
+      
         if (heldObject != null)
         {
             heldObject.MoveToHoldPoint(holdpoint.position);
@@ -134,6 +134,7 @@ public class FPController : MonoBehaviour
 
     public void HandleLook()
     {
+        if (TriggerCube.isPaused) return;
         float mouseX = lookInput.x * lookSensitivity;
         float mouseY = lookInput.y * lookSensitivity;
         verticalRotation -= mouseY;

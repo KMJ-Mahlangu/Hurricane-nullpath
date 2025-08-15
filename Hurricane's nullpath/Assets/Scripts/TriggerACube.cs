@@ -3,36 +3,56 @@ using UnityEngine;
 public class TriggerCube : MonoBehaviour
 {
     public string hintMessage;
-    //public string answer;
     public GameObject arrow;
-  
+    public GameObject uiPanel;
+    public Transform character;
+    public float triggerDistance = 3f;
 
-  
-   
-    private bool triggered = false;
+    private bool panelOpen = false;
+    public static bool isPaused = false; 
 
-    void OnTriggerEnter(Collider other)
+    void Update()
     {
-        if (triggered) return;
-        if (other.CompareTag("Player"))
-        {
-            triggered = true;
+        float distance = Vector3.Distance(transform.position, character.position);
 
-            HintUI hintUI = FindObjectOfType<HintUI>();
-            hintUI.ShowHint(hintMessage/*,answer, OnCorrectAnswer*/);
-          // Time.timeScale = 0f;
+        if (!panelOpen && distance <= triggerDistance)
+        {
+            OpenPanel();
+        }
+        else if (panelOpen && distance > triggerDistance)
+        {
+            ClosePanel();
         }
     }
 
-    void OnCorrectAnswer()
+    void OpenPanel()
     {
-        
-        Debug.Log("Correct answer! Proceed");
-        if(arrow != null)
-        {
+        panelOpen = true;
+        isPaused = true;
+
+        if (uiPanel != null)
+            uiPanel.SetActive(true);
+
+        HintUI hintUI = FindObjectOfType<HintUI>();
+        if (hintUI != null)
+            hintUI.ShowHint(hintMessage);
+
+        if (arrow != null)
             arrow.SetActive(false);
-        }
-        gameObject.SetActive(false);
-      // Time.timeScale = 1f;
+
+       // Time.timeScale = 0f;
+       
+    }
+
+    void ClosePanel()
+    {
+        panelOpen = false;
+        isPaused = false;
+
+        if (uiPanel != null)
+            uiPanel.SetActive(false);
+
+        Time.timeScale = 1f;
+       
     }
 }
