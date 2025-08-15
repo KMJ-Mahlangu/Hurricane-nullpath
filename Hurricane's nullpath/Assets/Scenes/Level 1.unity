@@ -6633,6 +6633,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintMessage: is this cube2
   arrow: {fileID: 699762036}
+  uiPanel: {fileID: 869318494}
+  character: {fileID: 1087736356}
+  triggerDistance: 5
 --- !u!1 &185271845
 GameObject:
   m_ObjectHideFlags: 0
@@ -7624,6 +7627,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintMessage: is this cube3
   arrow: {fileID: 2074609358}
+  uiPanel: {fileID: 869318494}
+  character: {fileID: 1087736356}
+  triggerDistance: 5
 --- !u!1 &219038480
 GameObject:
   m_ObjectHideFlags: 0
@@ -10809,7 +10815,7 @@ GameObject:
   m_Component:
   - component: {fileID: 287969219}
   m_Layer: 6
-  m_Name: 4Cubes
+  m_Name: 11Cubes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22157,6 +22163,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintMessage: Is this working
   arrow: {fileID: 1498543506}
+  uiPanel: {fileID: 869318494}
+  character: {fileID: 1087736356}
+  triggerDistance: 5
 --- !u!65 &367901639
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42049,6 +42058,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintMessage: Is this working
   arrow: {fileID: 47954142}
+  uiPanel: {fileID: 869318494}
+  character: {fileID: 1087736356}
+  triggerDistance: 5
 --- !u!65 &718624841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53960,6 +53972,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintMessage: Is this working
   arrow: {fileID: 2003030825}
+  uiPanel: {fileID: 869318494}
+  character: {fileID: 1087736356}
+  triggerDistance: 5
 --- !u!65 &829080299
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54083,6 +54098,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintMessage: Is this working
   arrow: {fileID: 673288266}
+  uiPanel: {fileID: 869318494}
+  character: {fileID: 1087736356}
+  triggerDistance: 5
 --- !u!65 &838712302
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64526,6 +64544,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintMessage: Is this working
   arrow: {fileID: 868773918}
+  uiPanel: {fileID: 869318494}
+  character: {fileID: 1087736356}
+  triggerDistance: 5
 --- !u!43 &1261854570
 Mesh:
   m_ObjectHideFlags: 0
@@ -69904,6 +69925,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintMessage: is this cube4
   arrow: {fileID: 1696651256}
+  uiPanel: {fileID: 869318494}
+  character: {fileID: 1087736356}
+  triggerDistance: 5
 --- !u!1 &1469246674
 GameObject:
   m_ObjectHideFlags: 0
@@ -84366,6 +84390,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintMessage: testing"
   arrow: {fileID: 2054840074}
+  uiPanel: {fileID: 869318494}
+  character: {fileID: 1087736356}
+  triggerDistance: 5
 --- !u!65 &1688697374
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -101748,6 +101775,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintMessage: Is this working
   arrow: {fileID: 2066295810}
+  uiPanel: {fileID: 869318494}
+  character: {fileID: 1087736356}
+  triggerDistance: 5
 --- !u!65 &1974077762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -106445,6 +106475,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintMessage: Is this working
   arrow: {fileID: 2133834545}
+  uiPanel: {fileID: 869318494}
+  character: {fileID: 1087736356}
+  triggerDistance: 5
 --- !u!65 &2088689139
 BoxCollider:
   m_ObjectHideFlags: 0
