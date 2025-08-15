@@ -134,8 +134,7 @@ public class FPController : MonoBehaviour
 
     public void HandleLook()
     {
-       
-        if (TriggerCube.isPaused) return;
+       // if (TriggerCube.isPaused) return;
         float mouseX = lookInput.x * lookSensitivity;
         float mouseY = lookInput.y * lookSensitivity;
         verticalRotation -= mouseY;
