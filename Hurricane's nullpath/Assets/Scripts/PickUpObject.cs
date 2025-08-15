@@ -24,7 +24,7 @@ public class PickUpObject : MonoBehaviour
             MapManager.Instance.CollectPiece();
            // Time.timeScale = 0;
            
-            Destroy(gameObject);
+            //Destroy(gameObject);
            
         }
     }

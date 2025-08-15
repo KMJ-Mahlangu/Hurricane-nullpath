@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class FPController : MonoBehaviour
 {
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
+    public float sprintSpeed = 9f;
     public float gravity = -9.81f;
     public float jumpHeight = 1.5f;
 
@@ -20,10 +22,16 @@ public class FPController : MonoBehaviour
     private Vector3 velocity;
     private float verticalRotation = 0f;
 
+    private bool isSprinting = false;
+
     [Header("PickUp Settings")]
     public float pickUpRange = 3f;
     public Transform holdpoint;
     private PickUpObject heldObject;
+
+    [Header("Throw Settings")]
+    public float throwForce = 10f;
+    public float throwUpwardBoost = 1f;
 
 
     private void Awake()
@@ -37,7 +45,7 @@ public class FPController : MonoBehaviour
     {
         HandleMovement();
         HandleLook();
-
+      
         if (heldObject != null)
         {
             heldObject.MoveToHoldPoint(holdpoint.position);
@@ -54,6 +62,14 @@ public class FPController : MonoBehaviour
         lookInput = context.ReadValue<Vector2>();
     }
 
+    public void OnSprint(InputAction.CallbackContext context)
+    {
+        if(context.performed) isSprinting = true;
+        if (context.canceled) isSprinting = false;
+
+        Debug.Log("Sprinting Input Detected: " + context.phase);
+    }
+
     public void OnPickup(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
@@ -67,11 +83,12 @@ public class FPController : MonoBehaviour
                 if (pickUp != null)
                 {
                     pickUp.PickUp(holdpoint);
+                    heldObject = pickUp;
 
-                    if (!pickUp.isMapPiece)
+                    /*if (!pickUp.isMapPiece)
                     {
                         heldObject = pickUp;
-                    }
+                    }*/
                 }
             }
         }
@@ -82,7 +99,17 @@ public class FPController : MonoBehaviour
         }
     }
 
-    
+    public void OnThrow(InputAction.CallbackContext context)
+    {
+        if (!context.performed) return;
+        if (heldObject == null) return;
+
+        Vector3 dir = cameraTransform.forward;
+        Vector3 impulse = dir * throwForce + Vector3.up * throwUpwardBoost;
+
+       // heldObject.Throw(impulse);
+       // heldObject = null;
+    }
 
     public void OnJump(InputAction.CallbackContext context)
     {
@@ -94,9 +121,11 @@ public class FPController : MonoBehaviour
 
     public void HandleMovement()
     {
+        float currentSpeed = isSprinting ? sprintSpeed : moveSpeed;
+
         Vector3 move = transform.right * moveInput.x + transform.forward *
         moveInput.y;
-        controller.Move(move * moveSpeed * Time.deltaTime);
+        controller.Move(move * currentSpeed * Time.deltaTime);
         if (controller.isGrounded && velocity.y < 0)
             velocity.y = -2f;
         velocity.y += gravity * Time.deltaTime;
@@ -105,6 +134,7 @@ public class FPController : MonoBehaviour
 
     public void HandleLook()
     {
+       // if (TriggerCube.isPaused) return;
         float mouseX = lookInput.x * lookSensitivity;
         float mouseY = lookInput.y * lookSensitivity;
         verticalRotation -= mouseY;
