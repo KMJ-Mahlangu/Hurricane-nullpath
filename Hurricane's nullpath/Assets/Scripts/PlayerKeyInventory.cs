@@ -4,21 +4,27 @@ public class PlayerKeyInventory : MonoBehaviour
 {
     [Header("Key Settings")]
     [SerializeField] private int keysRequired = 3;
+    [SerializeField] private bool showDebugMessages = true;
     private int keysCollected = 0;
 
     [Header("UI Feedback")]
     [SerializeField] private UnityEngine.UI.Text keysText;
-
-    private void Start()
-    {
-        UpdateKeysUI();
-    }
+    [SerializeField] private GameObject keyCollectedEffect;
 
     public void AddKey()
     {
         keysCollected++;
         UpdateKeysUI();
-        Debug.Log($"Key collected! ({keysCollected}/{keysRequired})");
+
+        if (keyCollectedEffect != null)
+        {
+            Instantiate(keyCollectedEffect, transform.position, Quaternion.identity);
+        }
+
+        if (showDebugMessages)
+        {
+            Debug.Log($"Key collected! ({keysCollected}/{keysRequired})", this);
+        }
     }
 
     public bool HasAllKeys()
