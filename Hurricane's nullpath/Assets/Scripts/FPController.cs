@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class FPController : MonoBehaviour
@@ -49,6 +50,10 @@ public class FPController : MonoBehaviour
         if (heldObject != null)
         {
             heldObject.MoveToHoldPoint(holdpoint.position);
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
         }
     }
 

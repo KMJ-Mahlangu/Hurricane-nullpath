@@ -1,8 +1,17 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Mainmenu : MonoBehaviour
+public class Endgame : MonoBehaviour
 {
+    public GameObject player;
+
+    private void OnTriggerEnter (Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(2);
+        }
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,19 +22,5 @@ public class Mainmenu : MonoBehaviour
     void Update()
     {
         
-    }
-    public void Play()
-    {
-        SceneManager.LoadScene(1);
-    }
-
-    public void Quit()
-    {
-        Application.Quit();
-    }
-
-    public void MainMenu()
-    {
-        SceneManager.LoadScene(0);
     }
 }
