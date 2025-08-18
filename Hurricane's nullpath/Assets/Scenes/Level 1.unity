@@ -19100,13 +19100,8 @@ Transform:
   m_GameObject: {fileID: 328041809}
   serializedVersion: 2
 <<<<<<< HEAD
-<<<<<<< HEAD
   m_LocalRotation: {x: -0.14862719, y: 0.6067065, z: 0.7012732, w: 0.34355953}
   m_LocalPosition: {x: -2.75, y: 0.7, z: 0.33}
-=======
-  m_LocalRotation: {x: -0.21069652, y: 0.634979, z: 0.6851869, w: 0.28797153}
-  m_LocalPosition: {x: -2.759, y: 0.588, z: 0.318}
->>>>>>> parent of 4bc0937 (programmed keys)
 =======
   m_LocalRotation: {x: -0.21069652, y: 0.634979, z: 0.6851869, w: 0.28797153}
   m_LocalPosition: {x: -2.759, y: 0.588, z: 0.318}
@@ -19116,11 +19111,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1871263778}
 <<<<<<< HEAD
-<<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: -107.625, y: 223.5, z: -84.742004}
-=======
-  m_LocalEulerAnglesHint: {x: -97.472, y: 216.294, z: -77.67999}
->>>>>>> parent of 4bc0937 (programmed keys)
 =======
   m_LocalEulerAnglesHint: {x: -97.472, y: 216.294, z: -77.67999}
 >>>>>>> parent of 4bc0937 (programmed keys)
@@ -30013,9 +30004,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 761f5f98e8bf15e4bb27237076b7ee89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
->>>>>>> parent of 4bc0937 (programmed keys)
-=======
 >>>>>>> parent of 4bc0937 (programmed keys)
 --- !u!43 &535360013
 Mesh:
@@ -58143,7 +58131,6 @@ MonoBehaviour:
   player: {fileID: 1087736356}
   respawnPoint: {fileID: 353882381}
 <<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!1 &1112144188
 GameObject:
   m_ObjectHideFlags: 0
@@ -58537,8 +58524,6 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
-=======
->>>>>>> parent of 4bc0937 (programmed keys)
 =======
 >>>>>>> parent of 4bc0937 (programmed keys)
 --- !u!43 &1112305289
@@ -80470,10 +80455,7 @@ Mesh:
     size: 0
     path: 
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> parent of 4bc0937 (programmed keys)
 --- !u!1 &1625871698
 GameObject:
   m_ObjectHideFlags: 0
@@ -92603,13 +92585,8 @@ Transform:
   m_Children:
   - {fileID: 328041810}
 <<<<<<< HEAD
-<<<<<<< HEAD
   - {fileID: 179487412}
   - {fileID: 1112144189}
-=======
-  - {fileID: 1011843325}
-  - {fileID: 1980833822}
->>>>>>> parent of 4bc0937 (programmed keys)
 =======
   - {fileID: 1011843325}
   - {fileID: 1980833822}
@@ -103611,9 +103588,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065557836}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
->>>>>>> parent of 4bc0937 (programmed keys)
-=======
 >>>>>>> parent of 4bc0937 (programmed keys)
 --- !u!1 &2079048833
 GameObject:
@@ -108917,9 +108891,6 @@ SceneRoots:
   - {fileID: 1871263778}
   - {fileID: 1801349716}
 <<<<<<< HEAD
-<<<<<<< HEAD
   - {fileID: 1804803104}
-=======
->>>>>>> parent of 4bc0937 (programmed keys)
 =======
 >>>>>>> parent of 4bc0937 (programmed keys)
