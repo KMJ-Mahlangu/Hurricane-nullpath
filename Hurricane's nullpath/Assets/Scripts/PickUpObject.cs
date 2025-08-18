@@ -4,11 +4,12 @@ public class PickUpObject : MonoBehaviour
 {
     private Rigidbody rb;
     private bool isKey = false;
+    [SerializeField] private bool showDebugMessages = true;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        isKey = CompareTag("Key"); // Tag your key objects with "Key"
+        isKey = CompareTag("Key");
     }
 
     public void PickUp(Transform holdpoint)
@@ -26,7 +27,8 @@ public class PickUpObject : MonoBehaviour
             if (inventory != null)
             {
                 inventory.AddKey();
-                Destroy(gameObject, 0.1f); // Destroy the key after a small delay
+                if (showDebugMessages) Debug.Log("Key added to inventory", this);
+                Destroy(gameObject, 0.1f);
             }
         }
     }

@@ -36856,6 +36856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70cea08af5d32154e8315c8f2d39831a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showDebugMessages: 1
 --- !u!54 &643977086
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39521,6 +39522,7 @@ GameObject:
   - component: {fileID: 689071400}
   - component: {fileID: 689071399}
   - component: {fileID: 689071403}
+  - component: {fileID: 689071404}
   m_Layer: 0
   m_Name: Gate 1 (2)
   m_TagString: Untagged
@@ -39631,6 +39633,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openSpeed: 5
   slideDistance: 20
+--- !u!65 &689071404
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689071398}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 0.99999994}
+  m_Center: {x: 0, y: -0.00000011920929, z: 0}
 --- !u!1 &690952473
 GameObject:
   m_ObjectHideFlags: 0
@@ -56606,7 +56629,7 @@ Transform:
   m_GameObject: {fileID: 1087736352}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -140.6, y: 1.733, z: 122.6}
+  m_LocalPosition: {x: -79.1, y: 1.733, z: 122.6}
   m_LocalScale: {x: 1.5916767, y: 1.8940954, z: 1.5916767}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -56831,7 +56854,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keysRequired: 3
+  showDebugMessages: 1
   keysText: {fileID: 1676705281}
+  keyCollectedEffect: {fileID: 0}
 --- !u!43 &1093385510
 Mesh:
   m_ObjectHideFlags: 0
@@ -63504,6 +63529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70cea08af5d32154e8315c8f2d39831a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showDebugMessages: 1
 --- !u!54 &1285323542
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -85000,6 +85026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70cea08af5d32154e8315c8f2d39831a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showDebugMessages: 1
 --- !u!54 &1720144470
 Rigidbody:
   m_ObjectHideFlags: 0
