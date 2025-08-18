@@ -3,7 +3,7 @@ using UnityEngine;
 public class PickUpObject : MonoBehaviour
 {
     private Rigidbody rb;
-    public bool isMapPiece = false;
+   // public bool isObject = false;
 
     private void Awake()
     {
@@ -16,17 +16,17 @@ public class PickUpObject : MonoBehaviour
         rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
-        transform.SetParent(holdpoint);
+        transform.SetParent(holdpoint);;
         transform.localPosition = Vector3.zero;
 
-        if(isMapPiece)
+       /* if(isObject)
         {
             MapManager.Instance.CollectPiece();
            // Time.timeScale = 0;
            
             //Destroy(gameObject);
            
-        }
+         }*/
     }
 
    public void Drop()

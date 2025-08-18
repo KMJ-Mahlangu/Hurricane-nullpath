@@ -29,9 +29,9 @@ public class FPController : MonoBehaviour
     public Transform holdpoint;
     private PickUpObject heldObject;
 
-    [Header("Throw Settings")]
+   /* [Header("Throw Settings")]
     public float throwForce = 10f;
-    public float throwUpwardBoost = 1f;
+    public float throwUpwardBoost = 1f;*/
 
 
     private void Awake()
@@ -85,7 +85,7 @@ public class FPController : MonoBehaviour
                     pickUp.PickUp(holdpoint);
                     heldObject = pickUp;
 
-                    /*if (!pickUp.isMapPiece)
+                   /* if (!pickUp.isObject)
                     {
                         heldObject = pickUp;
                     }*/
@@ -99,7 +99,7 @@ public class FPController : MonoBehaviour
         }
     }
 
-    public void OnThrow(InputAction.CallbackContext context)
+   /* public void OnThrow(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
         if (heldObject == null) return;
@@ -109,7 +109,7 @@ public class FPController : MonoBehaviour
 
        // heldObject.Throw(impulse);
        // heldObject = null;
-    }
+    }*/
 
     public void OnJump(InputAction.CallbackContext context)
     {
@@ -134,7 +134,7 @@ public class FPController : MonoBehaviour
 
     public void HandleLook()
     {
-       // if (TriggerCube.isPaused) return;
+      
         float mouseX = lookInput.x * lookSensitivity;
         float mouseY = lookInput.y * lookSensitivity;
         verticalRotation -= mouseY;
@@ -143,4 +143,8 @@ public class FPController : MonoBehaviour
         cameraTransform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
         transform.Rotate(Vector3.up * mouseX);
     }
+
+
+
+
 }
