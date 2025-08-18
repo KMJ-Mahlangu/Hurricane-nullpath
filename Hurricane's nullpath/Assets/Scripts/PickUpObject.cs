@@ -3,10 +3,12 @@ using UnityEngine;
 public class PickUpObject : MonoBehaviour
 {
     private Rigidbody rb;
+    private bool isKey = false;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        isKey = CompareTag("Key"); // Tag your key objects with "Key"
     }
 
     public void PickUp(Transform holdpoint)
@@ -18,17 +20,14 @@ public class PickUpObject : MonoBehaviour
         transform.SetParent(holdpoint);
         transform.localPosition = Vector3.zero;
 
-        // ✅ If this is a key, mark it as collected
-        if (CompareTag("Key"))
+        if (isKey)
         {
-            PlayerInventory inventory = holdpoint.root.GetComponent<PlayerInventory>();
+            PlayerKeyInventory inventory = holdpoint.root.GetComponent<PlayerKeyInventory>();
             if (inventory != null)
             {
-                inventory.CollectKey();
+                inventory.AddKey();
+                Destroy(gameObject, 0.1f); // Destroy the key after a small delay
             }
-
-            // Optional: destroy the key object after pickup
-            Destroy(gameObject);
         }
     }
 
