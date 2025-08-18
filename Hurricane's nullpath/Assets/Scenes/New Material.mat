@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< Updated upstream
 --- !u!114 &-4381202582375394206
+=======
+--- !u!114 &-2497263078214764874
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,8 +132,13 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+<<<<<<< Updated upstream
     - _BaseColor: {r: 0.381132, g: 0.29478878, b: 0.06543964, a: 1}
     - _Color: {r: 0.38113198, g: 0.29478875, b: 0.06543962, a: 1}
+=======
+    - _BaseColor: {r: 0.5471698, g: 0.3617902, b: 0.023745043, a: 1}
+    - _Color: {r: 0.5471698, g: 0.36179018, b: 0.023745043, a: 1}
+>>>>>>> Stashed changes
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
