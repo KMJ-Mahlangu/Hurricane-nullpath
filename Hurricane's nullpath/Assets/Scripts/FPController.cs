@@ -38,7 +38,7 @@ public class FPController : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
        /* Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;*/
+        //Cursor.visible = false;*/
     }
 
     private void Update()
