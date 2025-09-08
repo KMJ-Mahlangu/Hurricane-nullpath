@@ -31,6 +31,12 @@ public class FPController : MonoBehaviour
     private PickUpObject heldObject;
     public LayerMask pickUpLayer;
 
+    [Header("Inspect Settings")]
+    public Transform inspectPoint;
+    public float inspectMoveSpeed = 10f;
+
+    private bool isInspecting = false;
+
    /* [Header("Throw Settings")]
     public float throwForce = 10f;
     public float throwUpwardBoost = 1f;*/
@@ -46,12 +52,26 @@ public class FPController : MonoBehaviour
     private void Update()
     {
         HandleMovement();
-        HandleLook();
+        if (!isInspecting)
+        {
+            HandleLook();
+        }
+        
       
         if (heldObject != null)
         {
-            heldObject.MoveToHoldPoint(holdpoint.position);
+            if (isInspecting)
+            {
+                heldObject.MoveToInspect(inspectPoint.position);
+                heldObject.RotateHeld(lookInput);
+            }
+            else
+            {
+                heldObject.MoveToHoldPoint(holdpoint.position);
+            }
+
         }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene(0);
@@ -66,6 +86,7 @@ public class FPController : MonoBehaviour
     public void OnLook(InputAction.CallbackContext context)
     {
         lookInput = context.ReadValue<Vector2>();
+        
     }
 
     public void OnSprint(InputAction.CallbackContext context)
@@ -146,6 +167,20 @@ public class FPController : MonoBehaviour
         verticalLookLimit);
         cameraTransform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
         transform.Rotate(Vector3.up * mouseX);
+    }
+    public void OnInspect(InputAction.CallbackContext context)
+    {
+        if (heldObject == null) return;
+        if(context.performed)
+        {
+            isInspecting = true;
+            lookInput = Vector2.zero;
+            Debug.Log("Now Inspecting");
+        }
+        else if(context.canceled)
+        {
+            isInspecting = false;
+        }
     }
 
 
