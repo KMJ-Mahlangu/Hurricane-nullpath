@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class KeyControlledGate : MonoBehaviour
@@ -5,6 +6,10 @@ public class KeyControlledGate : MonoBehaviour
     [Header("Gate Settings")]
     [SerializeField] private float openSpeed = 3f;
     [SerializeField] private float slideDistance = 2f;
+
+    [Header("UI Settings")]
+    [SerializeField] private GameObject promptUI;
+    [SerializeField] private TextMeshProUGUI promptText;
 
     private Vector3 closedPosition;
     private Vector3 openPosition;
@@ -17,6 +22,11 @@ public class KeyControlledGate : MonoBehaviour
         gateCollider = GetComponent<Collider>();
         closedPosition = transform.position;
         openPosition = closedPosition + Vector3.left * slideDistance;
+
+        if(promptUI != null )
+        {
+            promptUI.SetActive(false);
+        }
     }
 
     private void Update()
@@ -33,6 +43,7 @@ public class KeyControlledGate : MonoBehaviour
             {
                 isOpen = true;
                 gateCollider.enabled = false;
+                HideKeyPrompt();
             }
         }
     }
@@ -45,15 +56,41 @@ public class KeyControlledGate : MonoBehaviour
             if (inventory != null && inventory.HasAllKeys())
             {
                 isOpening = true;
+                ShowKeyPrompt("Gate Opening...");
                 Debug.Log("Gate opening!");
+                HideKeyPrompt();
             }
             else
             {
-                Debug.Log("You need all 3 keys to open this gate!");
+                ShowKeyPrompt("You need all 3 keys to open this gate!");
             }
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.CompareTag("Player") && !isOpen)
+        {
+            HideKeyPrompt();
+        }
+    }
+
+    private void ShowKeyPrompt(string message)
+    {
+        if (promptUI != null && promptText != null)
+        {
+            promptUI.SetActive(true);
+            promptText.text = message;
+        }
+    }
+
+    private void HideKeyPrompt()
+    {
+        if (promptUI != null)
+        {
+            promptUI.SetActive(false);
+        }
+    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
