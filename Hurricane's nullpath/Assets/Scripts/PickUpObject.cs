@@ -49,4 +49,16 @@ public class PickUpObject : MonoBehaviour
        transform.position = Vector3.Lerp(transform.position, targetPosition,Time.deltaTime*15f);
 
     }
+
+    public void MoveToInspect(Vector3 targetPosition)
+    {
+        transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * 10f);
+    }
+
+    public void RotateHeld(Vector2 input)
+    {
+        float rotateSpeed = 100f;
+        transform.Rotate(Vector3.up, -input.x * rotateSpeed * Time.deltaTime, Space.World);
+        transform.Rotate(Vector3.right, input.y * rotateSpeed * Time.deltaTime, Space.World);
+    }
 }
