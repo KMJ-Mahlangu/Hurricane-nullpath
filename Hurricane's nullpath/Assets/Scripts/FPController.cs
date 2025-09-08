@@ -29,6 +29,7 @@ public class FPController : MonoBehaviour
     public float pickUpRange = 3f;
     public Transform holdpoint;
     private PickUpObject heldObject;
+    public LayerMask pickUpLayer;
 
    /* [Header("Throw Settings")]
     public float throwForce = 10f;
@@ -82,7 +83,7 @@ public class FPController : MonoBehaviour
         if(heldObject == null)
         {
             Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
-            if(Physics.Raycast(ray, out RaycastHit hit ,pickUpRange))
+            if(Physics.Raycast(ray, out RaycastHit hit ,pickUpRange,pickUpLayer))
             {
                 PickUpObject pickUp = hit.collider.GetComponent<PickUpObject>();
                 if (pickUp != null)
@@ -90,16 +91,14 @@ public class FPController : MonoBehaviour
                     pickUp.PickUp(holdpoint);
                     heldObject = pickUp;
 
-                   /* if (!pickUp.isObject)
-                    {
-                        heldObject = pickUp;
-                    }*/
+                   Physics.IgnoreCollision(heldObject.GetComponent<Collider>(), controller,true);
                 }
             }
         }
         else
         {
             heldObject.Drop();
+           Physics.IgnoreCollision(heldObject.GetComponent<Collider>(),controller,false);
             heldObject = null;
         }
     }
