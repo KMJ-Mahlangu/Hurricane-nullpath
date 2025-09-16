@@ -112,11 +112,12 @@ Material:
     - _EnvironmentReflections: 1
     - _FlowSpeed: 0.2
     - _FoamSpeed: 1
-    - _FoamThickness: 5
+    - _FoamThickness: 2
     - _Foam_Density: 5
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _MaxHeight: 0.391
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -135,10 +136,10 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 0, b: 0, a: 1}
-    - _Color: {r: 0.24792443, g: 0.7461721, b: 0.82641506, a: 1}
+    - _Color: {r: 0.19999999, g: 0.107599206, b: 0.10075471, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FlowDirection: {r: 0.1, g: 0.5, b: 0, a: 0}
-    - _FoamColor: {r: 0.20501311, g: 1.1051605, b: 1.7798866, a: 0}
+    - _FoamColor: {r: 1, g: 0.13333334, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

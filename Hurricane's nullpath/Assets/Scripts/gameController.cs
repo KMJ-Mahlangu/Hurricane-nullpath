@@ -153,6 +153,15 @@ public partial class @GameController: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""InteractButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""adc2c4bc-0555-49b9-a641-6dd15f9cac83"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -452,6 +461,28 @@ public partial class @GameController: IInputActionCollection2, IDisposable
                     ""action"": ""Inspect"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c3786d3d-b313-4014-8a95-58c996bcda40"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";New Control Scheme"",
+                    ""action"": ""InteractButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""63ea771c-993d-45f2-96ca-991bf4db17dc"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";New Control Scheme"",
+                    ""action"": ""InteractButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -489,6 +520,7 @@ public partial class @GameController: IInputActionCollection2, IDisposable
         m_Player_Throw = m_Player.FindAction("Throw", throwIfNotFound: true);
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
         m_Player_Inspect = m_Player.FindAction("Inspect", throwIfNotFound: true);
+        m_Player_InteractButton = m_Player.FindAction("InteractButton", throwIfNotFound: true);
     }
 
     ~@GameController()
@@ -576,6 +608,7 @@ public partial class @GameController: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Throw;
     private readonly InputAction m_Player_Sprint;
     private readonly InputAction m_Player_Inspect;
+    private readonly InputAction m_Player_InteractButton;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -615,6 +648,10 @@ public partial class @GameController: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Inspect".
         /// </summary>
         public InputAction @Inspect => m_Wrapper.m_Player_Inspect;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/InteractButton".
+        /// </summary>
+        public InputAction @InteractButton => m_Wrapper.m_Player_InteractButton;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -662,6 +699,9 @@ public partial class @GameController: IInputActionCollection2, IDisposable
             @Inspect.started += instance.OnInspect;
             @Inspect.performed += instance.OnInspect;
             @Inspect.canceled += instance.OnInspect;
+            @InteractButton.started += instance.OnInteractButton;
+            @InteractButton.performed += instance.OnInteractButton;
+            @InteractButton.canceled += instance.OnInteractButton;
         }
 
         /// <summary>
@@ -694,6 +734,9 @@ public partial class @GameController: IInputActionCollection2, IDisposable
             @Inspect.started -= instance.OnInspect;
             @Inspect.performed -= instance.OnInspect;
             @Inspect.canceled -= instance.OnInspect;
+            @InteractButton.started -= instance.OnInteractButton;
+            @InteractButton.performed -= instance.OnInteractButton;
+            @InteractButton.canceled -= instance.OnInteractButton;
         }
 
         /// <summary>
@@ -796,5 +839,12 @@ public partial class @GameController: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnInspect(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "InteractButton" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnInteractButton(InputAction.CallbackContext context);
     }
 }

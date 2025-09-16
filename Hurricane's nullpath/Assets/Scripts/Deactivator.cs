@@ -1,25 +1,42 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 
 public class Deactivator : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject challenge;
+    public float pushPower = 2f;
+    public Transform player;
+    public GameObject challenge; 
+    public float deactivateDistance = 1f; 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private Vector3 originalPosition;
+    private Rigidbody rb;
+
+    private void Start()
     {
-        challenge.SetActive(true);
+        originalPosition = transform.position;
+        rb = GetComponent<Rigidbody>();
+        if (rb == null)
+        {
+            rb = gameObject.AddComponent<Rigidbody>();
+        }
+        rb.isKinematic = false;
+        rb.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionY;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionStay(Collision collision)
     {
-        
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Vector3 pushDir = new Vector3(collision.transform.forward.x, 0, collision.transform.forward.z);
+            rb.linearVelocity = pushDir * pushPower;
+        }
     }
-    private void OnTriggerEnter(Collider other)
+
+    private void FixedUpdate()
     {
-        if (other.CompareTag("Player"))
+        float movedDistance = Vector3.Distance(originalPosition, transform.position);
+        if (movedDistance >= deactivateDistance && challenge != null)
         {
             challenge.SetActive(false);
         }
