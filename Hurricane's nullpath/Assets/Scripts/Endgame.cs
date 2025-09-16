@@ -9,18 +9,17 @@ public class Endgame : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            SceneManager.sceneLoaded += OnSceneLoaded;
             SceneManager.LoadScene(2);
         }
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void OnSceneLoaded(Scene scene,LoadSceneMode node)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(scene.buildIndex ==2)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }

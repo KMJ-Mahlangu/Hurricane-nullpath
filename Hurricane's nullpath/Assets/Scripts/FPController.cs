@@ -45,8 +45,18 @@ public class FPController : MonoBehaviour
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
-       /* Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;*/
+        string sceneName = SceneManager.GetActiveScene().name;
+        if (sceneName.Contains("Level 1"))
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        
     }
 
     private void Update()
