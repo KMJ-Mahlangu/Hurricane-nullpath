@@ -1,44 +1,51 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-
+using System.Collections;
 
 public class Deactivator : MonoBehaviour
 {
-    public float pushPower = 2f;
-    public Transform player;
-    public GameObject challenge; 
-    public float deactivateDistance = 1f; 
+    [Header("Movement Settings")]
+    public float moveDistance = 0.5f;      
+    public float moveSpeed = 3f;           
+    public GameObject challenge;           
 
-    private Vector3 originalPosition;
-    private Rigidbody rb;
+    private Vector3 targetPos;
+    private bool isMoving = false;
 
-    private void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        originalPosition = transform.position;
-        rb = GetComponent<Rigidbody>();
-        if (rb == null)
+        
+        if (other.CompareTag("Player") && !isMoving)
         {
-            rb = gameObject.AddComponent<Rigidbody>();
-        }
-        rb.isKinematic = false;
-        rb.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionY;
-    }
+            
+            Vector3 pushDir = (transform.position - other.transform.position).normalized;
 
-    private void OnCollisionStay(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Vector3 pushDir = new Vector3(collision.transform.forward.x, 0, collision.transform.forward.z);
-            rb.linearVelocity = pushDir * pushPower;
+            
+            targetPos = transform.position + pushDir * moveDistance;
+
+            
+            StartCoroutine(MoveBlock());
         }
     }
 
-    private void FixedUpdate()
+    private IEnumerator MoveBlock()
     {
-        float movedDistance = Vector3.Distance(originalPosition, transform.position);
-        if (movedDistance >= deactivateDistance && challenge != null)
+        isMoving = true;
+        Vector3 startPos = transform.position;
+        float t = 0f;
+
+        while (t < 1f)
+        {
+            t += Time.deltaTime * moveSpeed;
+            transform.position = Vector3.Lerp(startPos, targetPos, t);
+            yield return null;
+        }
+
+        
+        if (challenge != null)
         {
             challenge.SetActive(false);
         }
+
+        isMoving = false;
     }
 }

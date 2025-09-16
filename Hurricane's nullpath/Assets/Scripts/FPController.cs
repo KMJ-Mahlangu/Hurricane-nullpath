@@ -82,10 +82,10 @@ public class FPController : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+       /* if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene(0);
-        }
+        }*/
     }
 
     public void OnMove(InputAction.CallbackContext context)

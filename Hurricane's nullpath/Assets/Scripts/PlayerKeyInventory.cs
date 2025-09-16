@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerKeyInventory : MonoBehaviour
 {
     [Header("Key Settings")]
-    [SerializeField] private int keysRequired = 3;
+    [SerializeField] private int keysRequired = 1;
     [SerializeField] private bool showDebugMessages = true;
     private int keysCollected = 0;
 

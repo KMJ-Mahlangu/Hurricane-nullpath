@@ -2,32 +2,23 @@ using UnityEngine;
 
 public class GateTrigger : MonoBehaviour
 {
-    public HintUI hintUI; 
-    [TextArea] public string gateMessage = "3 Keys Are Needed To Open This Gate!";
-    [TextArea] public string openingMessage = "Now opening...";
+    [Header("Hint Settings")]
+    public string hintText;       
+    public HintUI hintUI;           
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && hintUI != null)
         {
-            PlayerKeyInventory inventory = GetComponent<PlayerKeyInventory>();
-            if (inventory != null && inventory.HasAllKeys())
-            {
-                hintUI.ShowHint(openingMessage);
-            }
-            else
-            {
-                hintUI.ShowHint(gateMessage);
-            }
-               
+            hintUI.ShowHint(hintText);   
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && hintUI != null)
         {
-            hintUI.HideHint();
+            hintUI.HideHint();           
         }
     }
 }
