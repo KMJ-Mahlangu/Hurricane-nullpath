@@ -368,7 +368,7 @@ public partial class @GameController: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""e72efaf2-96d3-441d-b30a-61bad1fd29e8"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";New Control Scheme"",
