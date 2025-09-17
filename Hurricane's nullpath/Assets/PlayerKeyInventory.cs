@@ -1,42 +1,40 @@
+using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerKeyInventory : MonoBehaviour
 {
-    [Header("Key Settings")]
-    [SerializeField] private int keysRequired = 1;
-    [SerializeField] private bool showDebugMessages = true;
-    private int keysCollected = 0;
+    [SerializeField] private TextMeshProUGUI keysText;
+    private List<string> keysCollected = new List<string>();
 
-    [Header("UI Feedback")]
-    [SerializeField] private UnityEngine.UI.Text keysText;
-    [SerializeField] private GameObject keyCollectedEffect;
-
-    public void AddKey()
+    public void AddKey(string keyName)
     {
-        keysCollected++;
-        UpdateKeysUI();
-
-        if (keyCollectedEffect != null)
+        if (!keysCollected.Contains(keyName))
         {
-            Instantiate(keyCollectedEffect, transform.position, Quaternion.identity);
-        }
-
-        if (showDebugMessages)
-        {
-            Debug.Log($"Key collected! ({keysCollected}/{keysRequired})", this);
+            keysCollected.Add(keyName);
+            UpdateKeysUI();
+            Debug.Log($"Collected key: {keyName}");
         }
     }
 
-    public bool HasAllKeys()
+    public bool HasKey(string keyName)
     {
-        return keysCollected >= keysRequired;
+        return keysCollected.Contains(keyName);
+    }
+
+    public void UseKey(string keyName)
+    {
+        if (keysCollected.Contains(keyName))
+        {
+            keysCollected.Remove(keyName);
+            UpdateKeysUI();
+            Debug.Log($"Used key: {keyName}");
+        }
     }
 
     private void UpdateKeysUI()
     {
         if (keysText != null)
-        {
-            keysText.text = $"Keys: {keysCollected}/{keysRequired}";
-        }
+            keysText.text = keysCollected.Count > 0 ? "Keys: " + string.Join(", ", keysCollected) : "Keys: None";
     }
 }
