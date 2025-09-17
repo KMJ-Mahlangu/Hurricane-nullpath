@@ -1,15 +1,14 @@
-using TMPro;
 using UnityEngine;
+using TMPro;
 
 public class KeyControlledGate : MonoBehaviour
 {
-    [Header("Gate Settings")]
-    [SerializeField] private float openSpeed = 3f;
-    [SerializeField] private float slideDistance = 2f;
-
-    [Header("UI Settings")]
-    [SerializeField] private GameObject promptUI;
-    [SerializeField] private TextMeshProUGUI promptText;
+    public string requiredKeyName;
+    public GameObject gateKeyObject; // Key model on the gate
+    public float openSpeed = 3f;
+    public float slideDistance = 2f;
+    public GameObject promptUI;
+    public TextMeshProUGUI promptText;
 
     private Vector3 closedPosition;
     private Vector3 openPosition;
@@ -23,27 +22,20 @@ public class KeyControlledGate : MonoBehaviour
         closedPosition = transform.position;
         openPosition = closedPosition + Vector3.left * slideDistance;
 
-        if(promptUI != null )
-        {
-            promptUI.SetActive(false);
-        }
+        if (promptUI != null) promptUI.SetActive(false);
+        if (gateKeyObject != null) gateKeyObject.SetActive(false);
     }
 
     private void Update()
     {
         if (isOpening && !isOpen)
         {
-            transform.position = Vector3.MoveTowards(
-                transform.position,
-                openPosition,
-                openSpeed * Time.deltaTime
-            );
-
+            transform.position = Vector3.MoveTowards(transform.position, openPosition, openSpeed * Time.deltaTime);
             if (Vector3.Distance(transform.position, openPosition) < 0.01f)
             {
                 isOpen = true;
                 gateCollider.enabled = false;
-                HideKeyPrompt();
+                if (promptUI != null) promptUI.SetActive(false);
             }
         }
     }
@@ -53,48 +45,25 @@ public class KeyControlledGate : MonoBehaviour
         if (other.CompareTag("Player") && !isOpening)
         {
             PlayerKeyInventory inventory = other.GetComponent<PlayerKeyInventory>();
-            if (inventory != null && inventory.HasAllKeys())
+            if (inventory != null && inventory.HasKey(requiredKeyName))
             {
+                inventory.UseKey(requiredKeyName);
+                if (gateKeyObject != null) gateKeyObject.SetActive(true);
                 isOpening = true;
-                ShowKeyPrompt("Gate Opening...");
-                Debug.Log("Gate opening!");
-                HideKeyPrompt();
+                if (promptText != null) promptText.text = "Gate Opening...";
+                if (promptUI != null) promptUI.SetActive(true);
             }
             else
             {
-                ShowKeyPrompt("You need all 3 keys to open this gate!");
+                if (promptText != null) promptText.text = $"You need {requiredKeyName}!";
+                if (promptUI != null) promptUI.SetActive(true);
             }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("Player") && !isOpen)
-        {
-            HideKeyPrompt();
-        }
-    }
-
-    private void ShowKeyPrompt(string message)
-    {
-        if (promptUI != null && promptText != null)
-        {
-            promptUI.SetActive(true);
-            promptText.text = message;
-        }
-    }
-
-    private void HideKeyPrompt()
-    {
-        if (promptUI != null)
-        {
+        if (other.CompareTag("Player") && !isOpen && promptUI != null)
             promptUI.SetActive(false);
-        }
-    }
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.green;
-        Gizmos.DrawLine(transform.position, transform.position + Vector3.left * slideDistance);
-        Gizmos.DrawWireCube(transform.position + Vector3.left * slideDistance, transform.localScale);
     }
 }

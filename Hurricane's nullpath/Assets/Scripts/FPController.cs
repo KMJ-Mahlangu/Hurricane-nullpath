@@ -30,6 +30,8 @@ public class FPController : MonoBehaviour
     public Transform holdpoint;
     private PickUpObject heldObject;
     public LayerMask pickUpLayer;
+    public PlayerKeyInventory playerInventory;
+
 
     [Header("Inspect Settings")]
     public Transform inspectPoint;
@@ -111,40 +113,41 @@ public class FPController : MonoBehaviour
     {
         if (!context.performed) return;
 
-        if(heldObject == null)
+        if (heldObject == null)
         {
             Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
-            if(Physics.Raycast(ray, out RaycastHit hit ,pickUpRange,pickUpLayer))
+            if (Physics.Raycast(ray, out RaycastHit hit, pickUpRange, pickUpLayer))
             {
                 PickUpObject pickUp = hit.collider.GetComponent<PickUpObject>();
                 if (pickUp != null)
                 {
-                    pickUp.PickUp(holdpoint);
-                    heldObject = pickUp;
 
-                   Physics.IgnoreCollision(heldObject.GetComponent<Collider>(), controller,true);
+                    pickUp.PickUp(holdpoint, playerInventory); 
+                    heldObject = pickUp;
+                    Physics.IgnoreCollision(heldObject.GetComponent<Collider>(), controller, true);
                 }
             }
         }
         else
         {
             heldObject.Drop();
-           Physics.IgnoreCollision(heldObject.GetComponent<Collider>(),controller,false);
+            Physics.IgnoreCollision(heldObject.GetComponent<Collider>(), controller, false);
             heldObject = null;
         }
     }
 
-   /* public void OnThrow(InputAction.CallbackContext context)
-    {
-        if (!context.performed) return;
-        if (heldObject == null) return;
 
-        Vector3 dir = cameraTransform.forward;
-        Vector3 impulse = dir * throwForce + Vector3.up * throwUpwardBoost;
+    /* public void OnThrow(InputAction.CallbackContext context)
+     {
+         if (!context.performed) return;
+         if (heldObject == null) return;
 
-       // heldObject.Throw(impulse);
-       // heldObject = null;
-    }*/
+         Vector3 dir = cameraTransform.forward;
+         Vector3 impulse = dir * throwForce + Vector3.up * throwUpwardBoost;
+
+        // heldObject.Throw(impulse);
+        // heldObject = null;
+     }*/
 
     public void OnJump(InputAction.CallbackContext context)
     {
