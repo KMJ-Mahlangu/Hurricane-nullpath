@@ -15602,8 +15602,8 @@ Transform:
   m_GameObject: {fileID: 228855492}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -221.05, y: -7.7553, z: 202.4184}
-  m_LocalScale: {x: 1.2634209, y: 2.475081, z: 22.536196}
+  m_LocalPosition: {x: -221.05, y: -7.5489, z: 202.4184}
+  m_LocalScale: {x: 1.2634209, y: 2.8879244, z: 22.536196}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1141316727}
@@ -38330,13 +38330,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 532931431}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a89f09da75351d84a9c94a9728cea100, type: 3}
+  m_Script: {fileID: 11500000, guid: 4416a38cfd0eae34e8b98a3907cf60ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   requiredKeyName: BrownKey
   gateKeyObject: {fileID: 189352716}
-  openSpeed: 3
-  slideDistance: 2
+  openSpeed: 5
+  slideDistance: 5
   promptUI: {fileID: 1687676837}
   promptText: {fileID: 1110152737}
 --- !u!43 &535360013
@@ -49474,7 +49474,6 @@ GameObject:
   - component: {fileID: 689071399}
   - component: {fileID: 689071404}
   - component: {fileID: 689071405}
-  - component: {fileID: 689071406}
   m_Layer: 0
   m_Name: Gate 3
   m_TagString: Untagged
@@ -49606,24 +49605,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: 1 Key Is Needed To Open This Gate!
   hintUI: {fileID: 1864314757}
---- !u!114 &689071406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689071398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a89f09da75351d84a9c94a9728cea100, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  requiredKeyName: 
-  gateKeyObject: {fileID: 0}
-  openSpeed: 3
-  slideDistance: 2
-  promptUI: {fileID: 1687676837}
-  promptText: {fileID: 1110152737}
 --- !u!1 &690952473
 GameObject:
   m_ObjectHideFlags: 0
@@ -56435,8 +56416,8 @@ Transform:
   m_GameObject: {fileID: 796330454}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -397.8773, y: 0.2206, z: 194.7128}
-  m_LocalScale: {x: 2.3596776, y: 0.46650493, z: 16.332272}
+  m_LocalPosition: {x: -397.8773, y: 0.4602, z: 194.7128}
+  m_LocalScale: {x: 2.3596776, y: 0.9457921, z: 16.332272}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -70262,7 +70243,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c76a2a56c69a2d34cbf0268dd12f5fe5, type: 2}
+  - {fileID: 2100000, guid: 17e5d4545e2aebe45964516feb278362, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -70544,7 +70525,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1087736352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9282628b73f659044b17907b158ada1d, type: 3}
+  m_Script: {fileID: 11500000, guid: c64bd4e287fa0744e93d8bf16308187a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   keysText: {fileID: 1490229297}
@@ -72158,7 +72139,6 @@ GameObject:
   - component: {fileID: 1128389729}
   - component: {fileID: 1128389733}
   - component: {fileID: 1128389734}
-  - component: {fileID: 1128389735}
   m_Layer: 0
   m_Name: Gate 2
   m_TagString: Untagged
@@ -72290,24 +72270,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0000002, y: 1, z: 1.0000002}
   m_Center: {x: -0.0000009536743, y: -0.00000011920929, z: 0}
---- !u!114 &1128389735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128389728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a89f09da75351d84a9c94a9728cea100, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  requiredKeyName: 
-  gateKeyObject: {fileID: 0}
-  openSpeed: 3
-  slideDistance: 2
-  promptUI: {fileID: 1687676837}
-  promptText: {fileID: 1110152737}
 --- !u!1 &1133458007
 GameObject:
   m_ObjectHideFlags: 0
@@ -136983,9 +136945,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16a362aeff9bc734d89143c23842fcb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointA: {fileID: 1893427725}
-  pointB: {fileID: 1488546774}
-  speed: 20
 --- !u!65 &2145888380
 BoxCollider:
   m_ObjectHideFlags: 0

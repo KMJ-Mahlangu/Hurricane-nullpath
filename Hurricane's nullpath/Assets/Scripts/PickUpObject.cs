@@ -21,7 +21,7 @@ public class PickUpObject : MonoBehaviour
         if (isKey && inventory != null && !string.IsNullOrEmpty(keyName))
         {
             inventory.AddKey(keyName);
-            Destroy(gameObject, 0.1f);
+            //Destroy(gameObject, 0.1f);
         }
     }
 
