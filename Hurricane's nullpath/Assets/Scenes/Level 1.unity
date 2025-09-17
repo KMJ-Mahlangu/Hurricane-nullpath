@@ -7306,7 +7306,6 @@ Transform:
   - {fileID: 1494882337}
   - {fileID: 2145888383}
   - {fileID: 1298317950}
-  - {fileID: 1557710171}
   m_Father: {fileID: 1703496887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &98710894
@@ -69375,7 +69374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveDistance: 0.7
   moveSpeed: 8.04
-  challenge: {fileID: 575847168}
+  challenge: {fileID: 2090350013}
 --- !u!65 &1041237159
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72654,7 +72653,6 @@ Transform:
   - {fileID: 653524605}
   - {fileID: 1977635037}
   - {fileID: 1451291632}
-  - {fileID: 1308011144}
   - {fileID: 228855493}
   - {fileID: 1720162810}
   - {fileID: 5863937}
@@ -80829,11 +80827,11 @@ Transform:
   m_GameObject: {fileID: 1308011143}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -216.2112, y: -6.5317, z: 259.1937}
+  m_LocalPosition: {x: -80.17973, y: 1.4413333, z: 1.8686676}
   m_LocalScale: {x: 4.254231, y: 4.5046563, z: 21.237524}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1141316727}
+  m_Father: {fileID: 2090350014}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1308011145
 MeshCollider:
@@ -98724,11 +98722,11 @@ Transform:
   m_GameObject: {fileID: 1557710165}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.291077, y: 0.37379968, z: -95.46782}
+  m_LocalPosition: {x: -66.70961, y: 2.1100297, z: 0.5241699}
   m_LocalScale: {x: 1.69, y: 2.674, z: 1.74}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 95560671}
+  m_Father: {fileID: 2090350014}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1569439815
 GameObject:
@@ -132124,6 +132122,8 @@ Transform:
   - {fileID: 261608005}
   - {fileID: 1035553239}
   - {fileID: 575847169}
+  - {fileID: 1308011144}
+  - {fileID: 1557710171}
   m_Father: {fileID: 1703496887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &2095183944
