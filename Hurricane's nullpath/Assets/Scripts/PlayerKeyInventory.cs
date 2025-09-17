@@ -35,6 +35,6 @@ public class PlayerKeyInventory : MonoBehaviour
     private void UpdateKeysUI()
     {
         if (keysText != null)
-            keysText.text = keysCollected.Count > 0 ? "Keys: " + string.Join(", ", keysCollected) : "Keys: None";
+            keysText.text = keysCollected.Count > 0 ? "Key: " + string.Join(", ", keysCollected) : "Keys: None";
     }
 }
