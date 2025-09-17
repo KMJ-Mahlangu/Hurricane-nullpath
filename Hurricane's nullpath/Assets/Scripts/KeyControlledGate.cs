@@ -4,9 +4,10 @@ using TMPro;
 public class KeyControlledGate : MonoBehaviour
 {
     public string requiredKeyName;
-    public GameObject gateKeyObject; // Key model on the gate
+    public GameObject gateKeyObject; 
     public float openSpeed = 3f;
     public float slideDistance = 2f;
+    public Transform slidePointB;
     public GameObject promptUI;
     public TextMeshProUGUI promptText;
 
@@ -20,10 +21,17 @@ public class KeyControlledGate : MonoBehaviour
     {
         gateCollider = GetComponent<Collider>();
         closedPosition = transform.position;
-        openPosition = closedPosition + Vector3.left * slideDistance;
 
-        if (promptUI != null) promptUI.SetActive(false);
-        if (gateKeyObject != null) gateKeyObject.SetActive(false);
+        if (slidePointB != null)
+            openPosition = slidePointB.position;
+        else
+            openPosition = closedPosition + Vector3.left * 2f; 
+
+        if (promptUI != null)
+            promptUI.SetActive(false);
+
+        if (gateKeyObject != null)
+            gateKeyObject.SetActive(false);
     }
 
     private void Update()
@@ -48,6 +56,11 @@ public class KeyControlledGate : MonoBehaviour
             if (inventory != null && inventory.HasKey(requiredKeyName))
             {
                 inventory.UseKey(requiredKeyName);
+                PickUpObject heldKey = other.GetComponentInChildren<PickUpObject>();
+                if (heldKey != null && heldKey.keyName == requiredKeyName)
+                {
+                    Destroy(heldKey.gameObject);
+                }
                 if (gateKeyObject != null) gateKeyObject.SetActive(true);
                 isOpening = true;
                 if (promptText != null) promptText.text = "Gate Opening...";
@@ -55,7 +68,7 @@ public class KeyControlledGate : MonoBehaviour
             }
             else
             {
-                if (promptText != null) promptText.text = $"You need {requiredKeyName}!";
+                if (promptText != null) promptText.text = $"{requiredKeyName} Missing!";
                 if (promptUI != null) promptUI.SetActive(true);
             }
         }
@@ -66,4 +79,6 @@ public class KeyControlledGate : MonoBehaviour
         if (other.CompareTag("Player") && !isOpen && promptUI != null)
             promptUI.SetActive(false);
     }
+
+
 }
