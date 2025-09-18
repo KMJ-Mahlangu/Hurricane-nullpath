@@ -6,11 +6,17 @@ public class Deactivator : MonoBehaviour
     [Header("Movement Settings")]
     public float moveDistance = 0.5f;      
     public float moveSpeed = 3f;           
-    public GameObject challenge;           
+    public GameObject challenge;
+    public GameObject myCanvas;
 
     private Vector3 targetPos;
     private bool isMoving = false;
 
+
+    public void Start()
+    {
+        myCanvas.SetActive(true);
+    }
     private void OnTriggerEnter(Collider other)
     {
         
@@ -30,6 +36,7 @@ public class Deactivator : MonoBehaviour
     private IEnumerator MoveBlock()
     {
         isMoving = true;
+        myCanvas.SetActive(false);
         Vector3 startPos = transform.position;
         float t = 0f;
 
