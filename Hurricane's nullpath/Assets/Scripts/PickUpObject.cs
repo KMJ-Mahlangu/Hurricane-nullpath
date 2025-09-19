@@ -5,6 +5,7 @@ public class PickUpObject : MonoBehaviour
     public string keyName;
     public bool isKey = true;
     private Rigidbody rb;
+    
 
     private void Awake()
     {
@@ -48,6 +49,8 @@ public class PickUpObject : MonoBehaviour
         transform.Rotate(Vector3.up, -input.x * rotateSpeed * Time.deltaTime, Space.World);
         transform.Rotate(Vector3.right, input.y * rotateSpeed * Time.deltaTime, Space.World);
     }
+
+    
 }
 
 
