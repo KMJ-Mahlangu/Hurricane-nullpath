@@ -4,13 +4,22 @@ public class PickUpObject : MonoBehaviour
 {
     public string keyName;
     public bool isKey = true;
+    public bool IsHeld { get; private set; }
     private Rigidbody rb;
-    
+    private Collider col;
+
+
+    private bool isHeld = false;
+    private Transform player;
+    private Transform holdpoint;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        
     }
+
+
 
     public void PickUp(Transform holdpoint, PlayerKeyInventory inventory)
     {
@@ -18,6 +27,7 @@ public class PickUpObject : MonoBehaviour
         rb.isKinematic = true;
         transform.position = holdpoint.position;
         transform.parent = holdpoint;
+        IsHeld = true;
 
         if (isKey && inventory != null && !string.IsNullOrEmpty(keyName))
         {
@@ -31,6 +41,7 @@ public class PickUpObject : MonoBehaviour
         rb.useGravity = true;
         rb.isKinematic = false;
         transform.parent = null;
+        IsHeld = false;
     }
 
     public void MoveToHoldPoint(Vector3 targetPosition)
