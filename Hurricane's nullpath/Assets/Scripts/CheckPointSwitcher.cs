@@ -5,6 +5,7 @@ public class CheckPointSwitcher : MonoBehaviour
 {
     [SerializeField] private GameObject entryZone;
     [SerializeField] private GameObject exitZone;
+    
 
     private void Start()
     {
@@ -14,6 +15,7 @@ public class CheckPointSwitcher : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+           
             entryZone.SetActive(false);
             exitZone.SetActive(true);
         }
