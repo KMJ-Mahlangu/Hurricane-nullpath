@@ -84,10 +84,10 @@ public class FPController : MonoBehaviour
 
         }
 
-        /*if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("Main Menu");
-        }*/
+            Application.Quit();
+        }
     }
 
     public void OnMove(InputAction.CallbackContext context)
