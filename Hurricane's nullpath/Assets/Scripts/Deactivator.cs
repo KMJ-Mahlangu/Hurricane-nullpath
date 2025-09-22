@@ -11,11 +11,22 @@ public class Deactivator : MonoBehaviour
 
     private Vector3 targetPos;
     private bool isMoving = false;
+    private Camera mainCam;
 
 
     public void Start()
     {
         myCanvas.SetActive(true);
+        mainCam = Camera.main;
+        
+    }
+
+    private void LateUpdate()
+    {
+        if(myCanvas != null && mainCam != null && myCanvas.activeSelf)
+        {
+            myCanvas.transform.LookAt(myCanvas.transform.position + mainCam.transform.forward);
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
