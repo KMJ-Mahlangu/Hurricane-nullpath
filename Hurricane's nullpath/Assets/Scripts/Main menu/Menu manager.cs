@@ -20,6 +20,13 @@ public class Menumanager : MonoBehaviour
        SettingsMenuCanvas.SetActive(false);
     }
 
+    private void OpenSettingsHandler()
+    {
+        MainMenuCanvas.SetActive(true);
+        SettingsMenuCanvas.SetActive(true);
+    }
+
+
     private void Update()
     {
         if (Inputmanager.inst.MenuOpenInput)
@@ -35,9 +42,9 @@ public class Menumanager : MonoBehaviour
             }
         }
 
-        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+       if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            OnBackPress();
+           OnBackPress();
         }
 
         if (Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame)
@@ -46,6 +53,21 @@ public class Menumanager : MonoBehaviour
         }
 
 
+    }
+
+     public void OnSettingsPressing()
+    {
+        OpenSettingsHandler();
+    }
+
+    public void ResumePressing ()
+    {
+        PlayGame();
+    }
+
+    public void OnSettingBackPressing ()
+    {
+        MenuOpen();
     }
     public void PauseGame()
     {
