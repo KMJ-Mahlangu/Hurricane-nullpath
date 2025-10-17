@@ -2,21 +2,14 @@ using UnityEngine;
 
 public class HeadCamera : MonoBehaviour
 {
-    public Transform headbone;
-    public Vector3 offset;
+    public Transform cameraAnchor;
+    public Transform mainCamera;
+    public float followSpeed = 10f;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void LateUpdate()
     {
-        if(headbone != null)
-        {
-            transform.position = headbone.position + headbone.TransformDirection(offset);
-            transform.rotation = headbone.rotation;
-        }
+        // Smoothly follow head position
+        mainCamera.position = Vector3.Lerp(mainCamera.position, cameraAnchor.position, Time.deltaTime * followSpeed);
+        mainCamera.rotation = Quaternion.Lerp(mainCamera.rotation, cameraAnchor.rotation, Time.deltaTime * followSpeed);
     }
 }
