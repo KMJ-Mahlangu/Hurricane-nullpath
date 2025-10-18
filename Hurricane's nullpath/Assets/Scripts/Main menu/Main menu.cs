@@ -33,19 +33,11 @@ public class Mainmenu : MonoBehaviour
 
     private void Update()
     {
-     
-        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
-        {
-           BackButton();
-        }
 
-        if (Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame)
-        {
-            BackButton();
-        }
+      
 
 
-    }
+}
 
     public void Play()
     {
