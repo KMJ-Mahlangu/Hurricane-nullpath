@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEditor.Build;
 
 public class OpenMainmenu : MonoBehaviour
 {
@@ -12,13 +13,17 @@ public class OpenMainmenu : MonoBehaviour
     [SerializeField] private GameObject SettingsMenuCanvas;
 
     [SerializeField] private GameObject MainMenuButtonOne;
-
+    
     private bool GamePause;
+
+    public GameObject player;
 
     private void Start()
     {
         MainMenuCanvas.SetActive(true);
         SettingsMenuCanvas.SetActive(false);
+       player.SetActive(false);
+
     }
 
     private void OpenSettingsHandler()

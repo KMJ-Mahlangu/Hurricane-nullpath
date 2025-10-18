@@ -18,7 +18,7 @@ TagManager:
   - Water
   - UI
   - loot
-  - 
+  - Main Menu
   - 
   - 
   - 
@@ -44,6 +44,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Main menu
+    uniqueID: 459679737
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
