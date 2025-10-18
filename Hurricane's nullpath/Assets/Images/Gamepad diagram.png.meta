@@ -1,0 +1,2178 @@
+fileFormatVersion: 2
+guid: 3ffcfac90b7790d439b59ed550b40feb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gamepad diagram_0
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 660
+        width: 12
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea4ba7594854754d93357190f1fa50d
+      internalID: -64447675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_1
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 660
+        width: 14
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba6b2ceaddb2ef4faf0edd7903af3f0
+      internalID: 1242550791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_2
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 660
+        width: 13
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e460a9caf0481d440b07f3838f4d1258
+      internalID: -1060603927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_3
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 660
+        width: 12
+        height: 15
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860b838e836511d498d5de3252882ef4
+      internalID: 1445093696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_4
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 660
+        width: 10
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86dc82f3179ad24e8442c41aa136728
+      internalID: -1516070499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_5
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 657
+        width: 11
+        height: 18
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5b0d0ef07d8f141a30e8017e392bd0
+      internalID: -439253412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_6
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 660
+        width: 12
+        height: 15
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299ddb25de808384ebebdd4ca954e419
+      internalID: -103980869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_7
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 660
+        width: 10
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff118b04fd4fdc34eb08eb5ddc33866a
+      internalID: -342773033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_8
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 660
+        width: 13
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4adfe73b5d0a06849a3e48af5a459f92
+      internalID: -962577679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_9
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 660
+        width: 13
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a46aeefd063cac4d9bf593bfd53564e
+      internalID: -1194807284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_10
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 660
+        width: 9
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df69e5bdcd13e30478ff249f0139ae51
+      internalID: -1813802466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_11
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 660
+        width: 13
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6bb9d94a630eea4d802720df8cd9348
+      internalID: 706022157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_12
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 660
+        width: 14
+        height: 15
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebefa23ec02b12548bea6a746f6cebe2
+      internalID: 1318783396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_13
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 660
+        width: 13
+        height: 15
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625b2d1cab4f8d449930edfc18fa28ed
+      internalID: -451454152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_14
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 210
+        width: 1027
+        height: 475
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63d4e4f5b4034d438bf350792c85ff6
+      internalID: 1650425706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_15
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 648
+        width: 4
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59187af0c4d061b4ba11f84bbd60be12
+      internalID: 1849700529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_16
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 649
+        width: 7
+        height: 7
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebc0051bd72ea846a1d0c43474bc2b5
+      internalID: -575751177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_17
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 649
+        width: 24
+        height: 7
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590ccadbaf7d987419edaba53cce597f
+      internalID: -2132570331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_18
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 650
+        width: 6
+        height: 6
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9e9c99222e6f64a95b458072c15cce
+      internalID: -1247811777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_19
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 649
+        width: 6
+        height: 7
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d732eae5a791b334f95aef19e477c80c
+      internalID: 562963254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_20
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 648
+        width: 4
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ae8feb1f459eb45b1b4d939e7b93a0
+      internalID: 1984553111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_21
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 589
+        width: 13
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f92b9ac05ff65a418f35081516983d0
+      internalID: -1574391801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_22
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 589
+        width: 13
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1b360233903bc4389f4959eea1f6c4
+      internalID: -11335060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_23
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 589
+        width: 8
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e42eb7e3deb7d247b497b3ff225475e
+      internalID: 1033493433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_24
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 589
+        width: 12
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3d9315e9745394cbf11d116d5d94b1
+      internalID: 1543796359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_25
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 588
+        width: 13
+        height: 15
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ad303ba43ee81429638febeba9a735
+      internalID: 597429517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_26
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 577
+        width: 5
+        height: 6
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4391da19737d704a924219e5ded2897
+      internalID: 133253072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_27
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 577
+        width: 14
+        height: 6
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913035ce442d1384c93c43f175b76f9f
+      internalID: 1401054090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_28
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 577
+        width: 5
+        height: 6
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a60fa3980176e64094639269eda88d7
+      internalID: -1996799943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_29
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 577
+        width: 5
+        height: 6
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73bec2f5cea4424ba9f4313f75712c4
+      internalID: -953799367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_30
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 577
+        width: 4
+        height: 6
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021d2890017bacf47beacf2c5d8394d8
+      internalID: -1528367666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_31
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 576
+        width: 10
+        height: 7
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b240aec5ae8a01449b3eec75d5702bec
+      internalID: -501989371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_32
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 576
+        width: 14
+        height: 7
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68607002b5b2a124288088a2ed7dd98d
+      internalID: -133301463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_33
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 480
+        width: 11
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac180f64d54421439f632d6792d6ffa
+      internalID: 1900007377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_34
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 480
+        width: 8
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e32f00a5a3542479b75770f019a721
+      internalID: -1028826077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_35
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 479
+        width: 12
+        height: 15
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c635ae08352cd0d4d8a6a269cf2e57e9
+      internalID: 549032554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_36
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 480
+        width: 13
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964ed529a38059840a01bf8a49147c0e
+      internalID: -821449421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_37
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 479
+        width: 13
+        height: 15
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeaaddf472929574b87332e2c5eb97bf
+      internalID: -224688478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_38
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 480
+        width: 12
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0ff5f6699c9444b883cd706e3620f4
+      internalID: 1925200382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_39
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 477
+        width: 11
+        height: 17
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f0b54c6ab4bea4d9efe27d13e96897
+      internalID: -1605871292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_40
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 480
+        width: 12
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7fbdb89a9d41c94892174d72a7d2bff
+      internalID: -315073199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_41
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 480
+        width: 14
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bedbe831a21f80c48a8efef349232fdc
+      internalID: -1470286975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_42
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 479
+        width: 12
+        height: 15
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631f782bec589dc438129763963a8af1
+      internalID: 1545355646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_43
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 480
+        width: 13
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c364b5b69c9801d4e9f1dcd090240aa0
+      internalID: -1205758438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_44
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 459
+        width: 14
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8108cb6748ee8ef44ac1a9f3ea8a5411
+      internalID: -238650202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_45
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 458
+        width: 15
+        height: 15
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b5755b1f9b4884783f67aba936d6ab
+      internalID: -239233477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_46
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 459
+        width: 14
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa917ef782823184785c2125bb79fc3e
+      internalID: -847862022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_47
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 459
+        width: 11
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28576d798dd8a504faa95fda314b78b2
+      internalID: -1522393374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_48
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 459
+        width: 15
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698fdfc3022832446b230352aacd3754
+      internalID: -603570566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_49
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 459
+        width: 10
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7d0d8b53bf13046a8e6b2b08eab073
+      internalID: 664678254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_50
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 459
+        width: 13
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32b9ff4f5a021a4e9881ea39472c013
+      internalID: 1374876982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_51
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 459
+        width: 12
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dcc543ee16974f4481a692f0eb27853
+      internalID: -68883842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_52
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 467
+        width: 4
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44e26b9e53b5e842b77370eed82f2bd
+      internalID: 823288273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_53
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 469
+        width: 5
+        height: 7
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a23e20fda639b246a671feb1e6891d7
+      internalID: 680004473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_54
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 469
+        width: 19
+        height: 7
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0214b01e4481b9489c7739586fcfc33
+      internalID: -1451546520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_55
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 469
+        width: 6
+        height: 7
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb2b8bca8fe9384fae84a4c627952d4
+      internalID: -128429368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_56
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 469
+        width: 18
+        height: 7
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422264929f3bae64fa0d1b1eaf130442
+      internalID: -1777463084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_57
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 469
+        width: 14
+        height: 7
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4310120e45bd345926d380af759233
+      internalID: 315553893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_58
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 467
+        width: 4
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43825c22ba0e4fc429c4347ca65e5cf2
+      internalID: 1004498551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_59
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 442
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbbc46db33c7c9478800525c2063446
+      internalID: -1498676599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_60
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 444
+        width: 16
+        height: 10
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3386ae3ece42d754b87a42f367efda83
+      internalID: 184936530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_61
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 444
+        width: 8
+        height: 10
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d83c6b88448beb4fa39e60e15a50448
+      internalID: 1793434028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_62
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 444
+        width: 10
+        height: 10
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ba8b96e4ee7864fb9031ede6297f22
+      internalID: -164579946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_63
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 444
+        width: 9
+        height: 10
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b7c30ff2f6b9c439ac9e068923028a
+      internalID: -1314810507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_64
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 442
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2fb521a2c685245b65e262f92a3bde
+      internalID: -360150106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_65
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 419
+        width: 15
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b4e2b4f2287394991729e8386b081c
+      internalID: -1558644833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_66
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 419
+        width: 12
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65394190fcfaab4993cf2674d1511b4
+      internalID: 1012130518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_67
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 419
+        width: 8
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e9f75b6f2fa00479ae48268990bbc0
+      internalID: 1241350882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_68
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 419
+        width: 13
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014ff2a32841d5f4db4fa778c15641df
+      internalID: 519791671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_69
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 419
+        width: 14
+        height: 15
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96135edbdf06e4f4d86767e48cb6af7c
+      internalID: 947061385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_70
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 409
+        width: 13
+        height: 6
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9770315b2c52204458329e5405492965
+      internalID: -1216256650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_71
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 409
+        width: 6
+        height: 6
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bac6facbe6217a4684d3893e14dce58
+      internalID: -1692900285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_72
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 408
+        width: 26
+        height: 7
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76f598ecb2a42c4bbeb7338f218de95
+      internalID: -1461660035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_73
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 409
+        width: 6
+        height: 6
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b445f8231c9cf41bbf11dae3ad9fd9
+      internalID: -679946243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_74
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 407
+        width: 4
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131526c22e2a81544992be6dae7ce0a8
+      internalID: -1649100879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_75
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 224
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa672b91ac2f7ad4ba799fbef3eed823
+      internalID: -843328871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_76
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 226
+        width: 9
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c43a96015ee51e4ba5fa4db5c72dc1c
+      internalID: 364136251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_77
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 226
+        width: 5
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54db199dea3da03408e16628f1d8c841
+      internalID: -614762216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_78
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 226
+        width: 8
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88cf885f455b5846921204c47471d61
+      internalID: -1379637927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_79
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 226
+        width: 9
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e908b3529015244ca52dba99ebeb8fe
+      internalID: 49489164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_80
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 226
+        width: 8
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1c669d32ab69d4ba3385c088a95ccf
+      internalID: 340096317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_81
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 226
+        width: 6
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e0931a68acb534197266799b488ef4
+      internalID: 1424266188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_82
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 226
+        width: 9
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92db35e4d3ca5044ca5e04237ac1bf6e
+      internalID: 1709309043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_83
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 226
+        width: 9
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8f29cf322efb049b510edc3c53e96c
+      internalID: -921947714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_84
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 226
+        width: 8
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38954e384002fc49b2b95914c24c86d
+      internalID: 536290570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_85
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 226
+        width: 15
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a73d15bd3d0d24681d2dbc9065294a
+      internalID: 434509266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_86
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 226
+        width: 9
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f94dfd184b9dd49b7f1dd78d895df8
+      internalID: 1897882651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_87
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 226
+        width: 9
+        height: 9
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8729c9495b12845a64b17ec1385f2c
+      internalID: -2059608384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gamepad diagram_88
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 224
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97051d1da06cf544fbe1604906230de8
+      internalID: -1219661492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 08d265ad366e72d4d880fa708a8380c2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Gamepad diagram_0: -64447675
+      Gamepad diagram_1: 1242550791
+      Gamepad diagram_10: -1813802466
+      Gamepad diagram_11: 706022157
+      Gamepad diagram_12: 1318783396
+      Gamepad diagram_13: -451454152
+      Gamepad diagram_14: 1650425706
+      Gamepad diagram_15: 1849700529
+      Gamepad diagram_16: -575751177
+      Gamepad diagram_17: -2132570331
+      Gamepad diagram_18: -1247811777
+      Gamepad diagram_19: 562963254
+      Gamepad diagram_2: -1060603927
+      Gamepad diagram_20: 1984553111
+      Gamepad diagram_21: -1574391801
+      Gamepad diagram_22: -11335060
+      Gamepad diagram_23: 1033493433
+      Gamepad diagram_24: 1543796359
+      Gamepad diagram_25: 597429517
+      Gamepad diagram_26: 133253072
+      Gamepad diagram_27: 1401054090
+      Gamepad diagram_28: -1996799943
+      Gamepad diagram_29: -953799367
+      Gamepad diagram_3: 1445093696
+      Gamepad diagram_30: -1528367666
+      Gamepad diagram_31: -501989371
+      Gamepad diagram_32: -133301463
+      Gamepad diagram_33: 1900007377
+      Gamepad diagram_34: -1028826077
+      Gamepad diagram_35: 549032554
+      Gamepad diagram_36: -821449421
+      Gamepad diagram_37: -224688478
+      Gamepad diagram_38: 1925200382
+      Gamepad diagram_39: -1605871292
+      Gamepad diagram_4: -1516070499
+      Gamepad diagram_40: -315073199
+      Gamepad diagram_41: -1470286975
+      Gamepad diagram_42: 1545355646
+      Gamepad diagram_43: -1205758438
+      Gamepad diagram_44: -238650202
+      Gamepad diagram_45: -239233477
+      Gamepad diagram_46: -847862022
+      Gamepad diagram_47: -1522393374
+      Gamepad diagram_48: -603570566
+      Gamepad diagram_49: 664678254
+      Gamepad diagram_5: -439253412
+      Gamepad diagram_50: 1374876982
+      Gamepad diagram_51: -68883842
+      Gamepad diagram_52: 823288273
+      Gamepad diagram_53: 680004473
+      Gamepad diagram_54: -1451546520
+      Gamepad diagram_55: -128429368
+      Gamepad diagram_56: -1777463084
+      Gamepad diagram_57: 315553893
+      Gamepad diagram_58: 1004498551
+      Gamepad diagram_59: -1498676599
+      Gamepad diagram_6: -103980869
+      Gamepad diagram_60: 184936530
+      Gamepad diagram_61: 1793434028
+      Gamepad diagram_62: -164579946
+      Gamepad diagram_63: -1314810507
+      Gamepad diagram_64: -360150106
+      Gamepad diagram_65: -1558644833
+      Gamepad diagram_66: 1012130518
+      Gamepad diagram_67: 1241350882
+      Gamepad diagram_68: 519791671
+      Gamepad diagram_69: 947061385
+      Gamepad diagram_7: -342773033
+      Gamepad diagram_70: -1216256650
+      Gamepad diagram_71: -1692900285
+      Gamepad diagram_72: -1461660035
+      Gamepad diagram_73: -679946243
+      Gamepad diagram_74: -1649100879
+      Gamepad diagram_75: -843328871
+      Gamepad diagram_76: 364136251
+      Gamepad diagram_77: -614762216
+      Gamepad diagram_78: -1379637927
+      Gamepad diagram_79: 49489164
+      Gamepad diagram_8: -962577679
+      Gamepad diagram_80: 340096317
+      Gamepad diagram_81: 1424266188
+      Gamepad diagram_82: 1709309043
+      Gamepad diagram_83: -921947714
+      Gamepad diagram_84: 536290570
+      Gamepad diagram_85: 434509266
+      Gamepad diagram_86: 1897882651
+      Gamepad diagram_87: -2059608384
+      Gamepad diagram_88: -1219661492
+      Gamepad diagram_89: 270967197
+      Gamepad diagram_9: -1194807284
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
