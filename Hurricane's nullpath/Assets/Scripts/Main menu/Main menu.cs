@@ -27,6 +27,8 @@ public class Mainmenu : MonoBehaviour
 
         if (FirstSelectedButton != null)
             EventSystem.current.SetSelectedGameObject(FirstSelectedButton);
+        
+        
         Map.SetActive(false);
     }
     
