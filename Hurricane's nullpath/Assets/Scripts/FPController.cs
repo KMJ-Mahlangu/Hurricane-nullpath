@@ -100,9 +100,14 @@ public class FPController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("Level1");
+            
+            SceneManager.LoadScene(0);
         }
 
+        if   (Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 
     public void OnMove(InputAction.CallbackContext context)
