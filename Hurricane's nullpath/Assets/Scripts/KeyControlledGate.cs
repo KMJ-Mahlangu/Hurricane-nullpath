@@ -17,8 +17,6 @@ public class KeyControlledGate : MonoBehaviour
     private bool isOpen = false;
     private Collider gateCollider;
 
-    public AudioSource gateOpenSound;
-
     private void Start()
     {
         gateCollider = GetComponent<Collider>();
@@ -65,7 +63,6 @@ public class KeyControlledGate : MonoBehaviour
                 }
                 if (gateKeyObject != null) gateKeyObject.SetActive(true);
                 isOpening = true;
-                if(gateOpenSound!=null) gateOpenSound.Play();
                 if (promptText != null) promptText.text = "Gate Opening...";
                 if (promptUI != null) promptUI.SetActive(true);
             }
