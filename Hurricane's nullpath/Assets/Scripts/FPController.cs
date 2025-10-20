@@ -11,7 +11,7 @@ public class FPController : MonoBehaviour
     public float sprintSpeed = 9f;
     public float gravity = -9.81f;
     public float jumpHeight = 1.5f;
-    public AudioSource walking;
+   
 
     [Header("Look Settings")]
     public Transform cameraTransform;
@@ -100,9 +100,14 @@ public class FPController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            
+            SceneManager.LoadScene(0);
         }
 
+        if   (Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -116,7 +121,6 @@ public class FPController : MonoBehaviour
             animator.SetBool("isRunning", isMoving && isSprinting);
         }
 
-        if(walking!=null) walking.Play();
 
     }
 
