@@ -4,7 +4,7 @@ using TMPro;
 public class KeyControlledGate : MonoBehaviour
 {
     public string requiredKeyName;
-    public GameObject gateKeyObject; 
+    public GameObject gateKeyObject;
     public float openSpeed = 3f;
     public float slideDistance = 2f;
     public Transform slidePointB;
@@ -25,7 +25,7 @@ public class KeyControlledGate : MonoBehaviour
         if (slidePointB != null)
             openPosition = slidePointB.position;
         else
-            openPosition = closedPosition + Vector3.left * 2f; 
+            openPosition = closedPosition + Vector3.left * 2f;
 
         if (promptUI != null)
             promptUI.SetActive(false);

@@ -17,6 +17,9 @@ public class FPController : MonoBehaviour
     public float lookSensitivity = 2f;
     public float verticalLookLimit = 90f;
 
+    [Header("Animation Settings")]
+    public Animator animator;
+
     private CharacterController controller;
     private Vector2 moveInput;
     private Vector2 lookInput;
@@ -84,15 +87,33 @@ public class FPController : MonoBehaviour
 
         }
 
+        if(animator != null)
+        {
+            bool isGrounded  = controller.isGrounded;
+            bool isMoving = moveInput.magnitude > 0.1f;
+
+            animator.SetBool("isWalking", isMoving && !isSprinting && isGrounded);
+            animator.SetBool("isRunning", isMoving && isSprinting && isGrounded);
+            animator.SetBool("isGrounded", isGrounded);
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
         }
+
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
+
+        if(animator != null)
+        {
+            bool isMoving = moveInput.magnitude > 0.1f;
+            animator.SetBool("isWalking", isMoving && !isSprinting);
+            animator.SetBool("isRunning", isMoving && isSprinting);
+        }
     }
 
     public void OnLook(InputAction.CallbackContext context)
@@ -107,6 +128,13 @@ public class FPController : MonoBehaviour
         if (context.canceled) isSprinting = false;
 
         Debug.Log("Sprinting Input Detected: " + context.phase);
+
+        if (animator!=null)
+        {
+            bool isMoving = moveInput.magnitude > 0.1f;
+            animator.SetBool("isRunning", isSprinting && isMoving);
+            animator.SetBool("isWalking", !isSprinting && isMoving);
+        }
     }
 
     public void OnPickup(InputAction.CallbackContext context)
@@ -154,6 +182,11 @@ public class FPController : MonoBehaviour
         if(context.performed && controller.isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+
+            if (animator != null)
+            {
+                animator.SetTrigger("Jump");
+            }
         }
     }
 
@@ -161,11 +194,13 @@ public class FPController : MonoBehaviour
     {
         float currentSpeed = isSprinting ? sprintSpeed : moveSpeed;
 
-        Vector3 move = transform.right * moveInput.x + transform.forward *
-        moveInput.y;
+        Vector3 move = transform.right * moveInput.x + transform.forward *moveInput.y;
+
         controller.Move(move * currentSpeed * Time.deltaTime);
+
         if (controller.isGrounded && velocity.y < 0)
             velocity.y = -2f;
+
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
