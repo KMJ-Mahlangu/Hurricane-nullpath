@@ -100,11 +100,11 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _GlowStrength: 1000
+    - _GlowStrength: 5000
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
-    - _Pulse_Speed: 5
+    - _Pulse_Speed: 2.62
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
