@@ -33,13 +33,7 @@ public class Mainmenu : MonoBehaviour
     }
     
 
-    private void Update()
-    {
-
-      
-
-
-}
+    
 
     public void Play()
     {
