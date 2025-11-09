@@ -33,6 +33,7 @@ public class NPCDialogue : MonoBehaviour
     [Header("Facing Settings")]
     public Transform player;
     public float rotationSpeed = 5f;
+
     private void Start()
     {
         // Make sure NPC starts disabled if needed
@@ -104,6 +105,7 @@ public class NPCDialogue : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            
             // Cancel any hide coroutine
             if (hideCoroutine != null)
             {
