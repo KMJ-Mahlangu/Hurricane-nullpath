@@ -84,19 +84,26 @@ public class PauseMenu : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
-        //GameResume();
-        
-         PauseCanvas.SetActive(false);
 
-        CursorVisible(true);
+        isPaused = true;
+        Time.timeScale = 1f;
+
+        if (PauseCanvas != null)
+            PauseCanvas.SetActive(false);
+
+        if (MainMenuCanvas != null)
+            MainMenuCanvas.SetActive(true);
 
         if (PlayerScript != null)
             PlayerScript.enabled = false;
 
         if (FirstSelectedButton != null)
             EventSystem.current.SetSelectedGameObject(FirstSelectedButton);
-        if (pauseCanvas != null)
-            pauseCanvas.enabled = false;
+
+        //  if (Map != null)
+        //    Map.SetActive(false);
+
+        CursorVisible(true);
     }
     public void Options()
     {
@@ -117,6 +124,15 @@ public class PauseMenu : MonoBehaviour
     {
         Cursor.visible = show;
         Cursor.lockState = show ? CursorLockMode.None : CursorLockMode.Locked;
+    }
+    public void BackButton()
+    {
+        //OptionsCanvas.SetActive(false);
+        OptionsCanvas.SetActive(true);
+
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(FirstSelectedButton);
+
     }
 }
 
