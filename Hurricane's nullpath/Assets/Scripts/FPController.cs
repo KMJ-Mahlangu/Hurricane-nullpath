@@ -98,16 +98,16 @@ public class FPController : MonoBehaviour
             animator.SetBool("isGrounded", isGrounded);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
+        //if (Input.GetKeyDown(KeyCode.Escape))
+       // {
             
-            SceneManager.LoadScene(0);
-        }
+        //    SceneManager.LoadScene(0);
+        //}
 
-        if   (Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame)
-        {
-            SceneManager.LoadScene(0);
-        }
+        //if   (Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame)
+        //{
+           // SceneManager.LoadScene(0);
+       // }
     }
 
     public void OnMove(InputAction.CallbackContext context)

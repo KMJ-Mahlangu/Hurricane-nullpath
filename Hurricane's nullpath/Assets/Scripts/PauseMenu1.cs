@@ -21,15 +21,19 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         GameResume();
+        PauseCanvas.SetActive(false);
     }
 
     
     // Update is called once per frame
     void Update()
     {
-        bool keyboardPressed = Keyboard.current.pKey.wasPressedThisFrame;
-        bool gamepadPressed = Gamepad.current != null && Gamepad.current.xButton.wasPressedThisFrame;
 
+
+        bool keyboardPressed = Input.GetKeyDown(KeyCode.Escape);
+        bool gamepadPressed = Gamepad.current != null && Gamepad.current.startButton.wasPressedThisFrame;
+
+        
         if (keyboardPressed || gamepadPressed)
         {
             if (isPaused)
@@ -39,11 +43,17 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void PressPause()
+    
+    public void GamePause()
     {
         isPaused = true;
-        PauseCanvas.SetActive(true);
-        CursorVisible(true);
+        Time.timeScale = 0f;
+
+        if (PauseCanvas != null)
+            PauseCanvas.SetActive(true);
+
+        if (MainMenuCanvas != null)
+            MainMenuCanvas.SetActive(false);
 
         if (PlayerScript != null)
             PlayerScript.enabled = false;
@@ -51,27 +61,30 @@ public class PauseMenu : MonoBehaviour
         if (FirstSelectedButton != null)
             EventSystem.current.SetSelectedGameObject(FirstSelectedButton);
 
-        Map.SetActive(false);
-    }
-    public void GamePause()
-    {
-       
+        if (Map != null)
+            Map.SetActive(false);
+
+        CursorVisible(true);
     }
    
     public void GameResume()
     {
         isPaused = false;
-        PauseCanvas.SetActive(false);
+        Time.timeScale = 1f;
+
+        if (PauseCanvas != null)
+            PauseCanvas.SetActive(false);
 
         if (MainMenuCanvas != null)
             MainMenuCanvas.SetActive(true);
 
-        CursorVisible(false);
-
         if (PlayerScript != null)
             PlayerScript.enabled = true;
 
-        Map.SetActive(true);
+        if (Map != null)
+            Map.SetActive(true);
+
+        CursorVisible(false);
 
     }
     private void CursorVisible(bool show)
