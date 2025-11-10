@@ -2,22 +2,16 @@ using UnityEngine;
 
 public class TriggerAudio : MonoBehaviour
 {
-    public AudioSource NPCClip;
+    public AudioSource ThunderClip;
    
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
         {
-            NPCClip.Play();
+            ThunderClip.Play();
           
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if(other.CompareTag("Player"))
-        {
-            NPCClip.Stop();
-        }
-    }
+    
 }
