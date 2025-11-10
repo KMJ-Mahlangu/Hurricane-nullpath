@@ -9,13 +9,17 @@ public class SelectFirst : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
+        if (FirstSelectedButton != null)
+            EventSystem.current.SetSelectedGameObject(FirstSelectedButton);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+        if (FirstSelectedButton != null)
+            EventSystem.current.SetSelectedGameObject(FirstSelectedButton);
     }
 
     public void SelectFirstButton()
