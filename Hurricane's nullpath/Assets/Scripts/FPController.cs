@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class FPController : MonoBehaviour
+
 {
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
@@ -43,9 +44,11 @@ public class FPController : MonoBehaviour
 
     private bool isInspecting = false;
 
-   /* [Header("Throw Settings")]
-    public float throwForce = 10f;
-    public float throwUpwardBoost = 1f;*/
+    /* [Header("Throw Settings")]
+     public float throwForce = 10f;
+     public float throwUpwardBoost = 1f;*/
+
+    public GameObject pauseCanvas;
 
 
     private void Awake()
@@ -99,15 +102,17 @@ public class FPController : MonoBehaviour
         }
 
         //if (Input.GetKeyDown(KeyCode.Escape))
-       // {
-            
+        // {
+
         //    SceneManager.LoadScene(0);
         //}
 
         //if   (Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame)
         //{
-           // SceneManager.LoadScene(0);
-       // }
+        // SceneManager.LoadScene(0);
+        // }
+
+       
     }
 
     public void OnMove(InputAction.CallbackContext context)
