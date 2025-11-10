@@ -6,6 +6,7 @@ public class Endgame : MonoBehaviour
     public GameObject player;
     public GameObject ExitCanvas;
     public GameObject Gate;
+    
 
     private void OnTriggerEnter (Collider other)
     {
@@ -13,7 +14,7 @@ public class Endgame : MonoBehaviour
         {
             ExitCanvas.SetActive(true);
             Gate.SetActive(false);
-           
+            
         }
     }
     private void OnSceneLoaded(Scene scene,LoadSceneMode node)
