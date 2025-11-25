@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -12,10 +13,11 @@ public class Mainmenu : MonoBehaviour
     public GameObject Map;
     public GameObject MenuCamera;
     public GameObject PlayerCamera;
-    
+   // public GameObject PauseCanvas;
+
 
     public MonoBehaviour PlayerScript;
-
+    public MonoBehaviour pauseCanvas;
 
     private void Start()
     {
@@ -27,19 +29,16 @@ public class Mainmenu : MonoBehaviour
 
         if (FirstSelectedButton != null)
             EventSystem.current.SetSelectedGameObject(FirstSelectedButton);
+        if (pauseCanvas != null)
+            pauseCanvas.enabled = false;
+        
         
         
         Map.SetActive(false);
     }
     
 
-    private void Update()
-    {
-
-      
-
-
-}
+    
 
     public void Play()
     {
@@ -53,6 +52,9 @@ public class Mainmenu : MonoBehaviour
         Map.SetActive(true);
         PlayerCamera.SetActive(true);
         MenuCamera.SetActive(false);
+
+        if (pauseCanvas != null)
+            pauseCanvas.enabled = true;
 
     }
 
@@ -68,7 +70,19 @@ public class Mainmenu : MonoBehaviour
 
     public void MainMenu()
     {
-        //SceneManager.LoadScene(0);
+        CursorVisible(true);
+
+        if (PlayerScript != null)
+            PlayerScript.enabled = false;
+
+        if (FirstSelectedButton != null)
+            EventSystem.current.SetSelectedGameObject(FirstSelectedButton);
+        if (pauseCanvas != null)
+            pauseCanvas.enabled = false;
+
+
+
+        Map.SetActive(false);
     }
 
     public void BackButton()

@@ -23,10 +23,10 @@ public class Deactivator : MonoBehaviour
 
     private void LateUpdate()
     {
-        if(myCanvas != null && mainCam != null && myCanvas.activeSelf)
+       /* if(myCanvas != null && mainCam != null && myCanvas.activeSelf)
         {
             myCanvas.transform.LookAt(myCanvas.transform.position + mainCam.transform.forward);
-        }
+        }*/
     }
     private void OnTriggerEnter(Collider other)
     {
